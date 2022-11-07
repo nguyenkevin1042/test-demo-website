@@ -1,0 +1,3 @@
+[{"id":1,"tour_name":"Thailand City Tour","tour_description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","image_src":"resources/img/destinations/thailand.jpg"},
+{"id":2,"tour_name":"Laos City Tour","tour_description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","image_src":"resources/img/destinations/laos.jpg"},
+{"id":3,"tour_name":"Singapore City Tour","tour_description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","image_src":"resources/img/destinations/singapore.jpg"}]

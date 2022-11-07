@@ -1,0 +1,1947 @@
+body{
+	font-family: 'Libre Baskerville', serif;
+	box-sizing: border-box;
+	background-color: #f8f7f5;
+	font-size: 13px;
+	color: black;
+}
+
+ul{
+	list-style: none;
+	list-style-type: none;
+ 	margin: 0;
+  padding: 0;
+}
+
+hr{
+	margin: 10px;
+}
+
+.inter-font{
+	font-family: 'Inter', sans-serif;
+}
+.libre-baskerville-font{
+	font-family: 'Libre Baskerville', serif;
+}
+
+.sect-title{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.sect-title h3{
+	font-weight: 900;
+}
+.sect-title p{
+	text-align: center;
+}
+.text-center{
+	text-align: center;
+}
+.active a{
+	color: #2596be !important;
+}
+.fill-star{
+	color: gold;
+}
+.carousel-indicators{
+	margin: auto;
+}
+.carousel-indicators [data-bs-target]{
+	background-color: grey;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+.carousel-indicators .active{
+	background-color: #0274bd;
+}
+.carousel-inner .carousel-item{
+	height: 600px;
+	margin: auto;
+}
+button.black-btn:hover{
+	background-color: white;
+}
+
+
+
+/*PRE HEADER*/
+#pre-header-nav {
+	padding: 10px 0px;
+}
+#pre-header-nav .container{
+	display: flex;
+}
+#pre-header-nav .container #contact{
+	opacity: 0.8;
+	/*margin-top: 10px;*/
+	position: relative;
+}
+#pre-header-nav .container #contact p{
+
+}
+#pre-header-nav .container #contact p span{
+	margin-left: 20px;
+}
+#pre-header-nav .container .navbar-toggler{
+	border: none;
+	padding: 0;
+}
+#pre-header-nav .container .navbar-toggler span{
+	font-size: 16px;
+	padding-left: 10px;
+}
+#pre-header-nav .container .navbar-toggler:hover{
+	color: #2596be;
+}
+#pre-header-nav .container .navbar-collapse{
+	flex-grow: 0;
+}
+#pre-header-nav .container #nav-list{
+
+}
+#pre-header-nav .container #nav-list .nav-item a{
+	opacity: 0.8;
+}
+#pre-header-nav .container #nav-list .nav-item a:hover{
+	color: #2596be;
+}
+
+/*END PRE HEADER*/
+
+/*HEADER*/
+#header-nav{
+	border-radius: 0;
+  border: 0;
+}
+#header-nav .container{
+	display: flex;
+}
+#header-nav .navbar-brand a{
+	text-decoration: none;
+}
+#header-nav .navbar-brand a:hover{
+	opacity: 0.5;
+}
+#header-nav .container .navbar-brand h1{
+	font-weight: 900;
+	text-decoration: none;
+}
+#header-nav .container .navbar-brand h1 > span{
+	color: black;
+}
+#header-nav .navbar-toggler{
+
+}
+#header-nav .container .navbar-collapse{
+	flex-grow: 0;
+}
+#header-nav #nav-list a{
+	text-decoration: none;
+}
+#header-nav .navbar-collapse .nav-item a{
+	text-align: center;
+}
+#header-nav .navbar-collapse .nav-item a:hover{
+	color: #2596be;
+}
+#header-nav .navbar-collapse .nav-item .active{
+	color: #2596be;
+}
+
+/*END HEADER*/
+
+/*BANNER*/
+#main-content #banner{
+	background: url('../resources/img/banner/banner-1399.jpg') no-repeat;
+	width: 100%;
+	height: 611px;
+}
+#main-content #banner .container{
+	width: 65%;
+	display: block;
+	position: relative;
+ 	top: 30%;
+  /*left: %;
+  transform: translate(20%, 20%);*/
+}
+#main-content #banner .container .banner-text{
+	padding-bottom: 70px;
+}
+#main-content #banner .container .banner-text h1{
+	color: white;
+	font-weight: 800;
+	font-size: 40px;
+}
+#main-content #banner .container .banner-text h1 span{
+	color: white;
+	font-weight: 900;
+	font-size: 55px;
+}
+#main-content #banner .container .banner-text p{
+	color: white;
+	font-weight: 200;
+	font-size: 25px;
+}
+#main-content #banner #select-trip .form-group{
+	padding: 0;
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
+#main-content #banner #select-trip .form-control{
+	border-radius: 0px;
+	font-size: 13px;
+	padding-left: 40px;
+	border: none;
+}
+#main-content #banner #select-trip button.btn-primary{
+	width: 100%;
+	border-radius: 0px;
+	font-size: 13px;
+}
+#main-content #banner #select-trip .banner-icon{
+	color: white;
+	background-color: black;
+	padding: 11px 12px;
+	font-size: 10px;
+	position: absolute;
+}
+#main-content #banner #select-trip .banner-icon .fa-clipboard{
+	padding: 0;
+}
+/*END BANNER*/
+
+
+/*MAIN CONTENT*/
+#main-content{
+	display: block;
+}
+/*1. PROS*/
+#main-content #pros-section{
+	margin-top: 50px;
+}
+#main-content .pros-content{
+	display: inline-flex;
+	justify-content: center;
+	align-content: center;
+	background-color: white;
+	margin-right: 20px;
+	padding: 30px 10px;
+}
+#main-content .pros-content img{
+	width: 50px;
+	height: 50px;
+}
+#main-content .pros-content .pros-text{
+	padding-left: 20px;
+}
+#main-content .pros-content .pros-text h6{
+	font-weight: 800;
+}
+#main-content .pros-content .pros-text p{
+	opacity: 0.8;
+	font-size: 12px;
+}
+
+/*2. DESTINATIONS*/
+#main-content #destinations{
+	width: 70%;
+	margin: auto;
+	display: flex;
+}
+#main-content #destinations .container{
+	position: relative;
+}
+#main-content #destinations .sect-title{
+	text-align: center;
+}
+#main-content #destinations .dest-item{
+	position: relative;
+}
+#main-content #destinations .dest-item p{
+	color: white;
+	font-size: 22px;
+	font-weight: 700;
+	text-align: center;
+  position: absolute;
+ 	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#main-content #destinations .dest-item img{
+	width: 100%;
+}
+#main-content #destinations .overlay{
+	z-index: 2;
+	position: relative;
+}
+#main-content #destinations .travel-background{
+	position: absolute;
+	top: 72%;
+  left: 3%;
+  transform: translate(-35%, 0%);
+	z-index: 1;
+}
+#main-content #destinations .travel-background img{
+	position: relative;
+	top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+}
+
+/*3. DISCOUNT*/
+#main-content #discount{
+	background: url('../resources/img/discount/discount-1399.jpg') no-repeat;
+	width: 100%;
+	height: 466px;
+	display: flex;
+	margin-top: 7%;
+	position: relative;
+	z-index: 2;
+}
+#main-content #discount .container{
+	width: 80%;
+}
+#main-content #discount .discount-text{
+	text-align: center;
+	color: white;
+}
+#main-content #discount .discount-text p{
+	font-size: 30px;
+}
+#main-content #discount .discount-text p span{
+	font-size: 24px;
+}
+#main-content #discount .time-text{
+	margin: auto;
+	width: 80%;
+}
+#main-content #discount .time-countdown{
+	align-items: center;
+}
+#main-content #discount .time-countdown .time-title{
+	color: white;
+	text-align: center;
+}
+#main-content #discount .time-countdown .circle {
+  width: 80px;
+  height: 80px;
+  line-height: 72px;
+  border-radius: 50%;
+  border: 3px solid white;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+#main-content #discount .join-us-btn{
+	width: 30%;
+	margin: auto;
+	margin-top: 60px;
+}
+#main-content #discount .join-us-btn button{
+	background-color: black;
+	color: white;
+	margin: auto;
+	padding: 10px 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#main-content #discount .join-us-btn button:hover{
+	opacity: 0.8;
+}
+
+/* 4. FEATURE PACKAGES*/
+#main-content #features{
+	width: 100%;
+	margin: auto;
+	display: block;
+}
+#main-content #features .tour-item{
+	background-color: white;
+	padding: 0;
+	margin: auto;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.46);
+	-moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.46);
+	box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.46);	
+}
+#main-content #features .tour-item img{
+	width: 100%;
+}
+#main-content #features .tour-item .tour-text{
+	width: 100%;
+	padding: 20px 20px 0px 20px;
+}
+#main-content #features .tour-item .tour-text h6{
+	font-weight: 900;
+}
+#main-content #features .tour-item .tour-text p{
+	opacity: 0.8;
+}
+#main-content #features .tour-item .tour-booking{
+	padding: 0px 20px 60px 20px;
+}
+#main-content #features .tour-item .tour-booking button{
+	background-color: #0274bd;
+	color: white;
+	border: none;
+	padding: 10px 30px;
+}
+#main-content #features .tour-item .tour-booking button:hover{
+	background-color: #002e79;
+}
+#main-content #features .tour-item .tour-booking .price-text{
+	color: #096dc9;
+	margin-top: 2px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+/* 5. CLIENTS REVIEWS*/
+#main-content #client-reviews .carousel-item{
+	height: 450px;
+	margin: auto;
+}
+#main-content #client-reviews .carousel-item .review-content{
+	width: 30%;
+	margin: auto;
+	margin-top: 20px;
+	background-color: white;
+	padding: 0;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	-webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.46);
+	-moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.46);
+	box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.46);
+}
+#main-content #client-reviews .carousel-item .review-content  img{
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+}
+#main-content #client-reviews .carousel-item .review-content p i{
+	color: #0274bd;
+	margin: auto;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	padding-top: 20px;
+	font-size: 20px;
+}
+#main-content #client-reviews .carousel-item .review-content .review-text{
+	text-align: center;
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#main-content #client-reviews .carousel-item .review-content .review-text .review{
+	font-size: 13px;
+}
+#main-content #client-reviews .carousel-item .review-content .review-text .client-information{
+	opacity: 0.8;
+}
+#main-content #client-reviews .carousel-item .review-content .review-text .client-information .client-name{
+	font-size: 15px;
+	font-weight: 700;
+}
+#main-content #client-reviews .carousel-item .review-content .review-text .client-information .client-address{
+	font-size: 13px;
+	font-weight: 500;
+}
+
+/*6. SPECIAL OFFER*/
+#main-content #special-offer{
+	display: block;
+	margin: auto;
+	margin-top: 100px;
+}
+#main-content #special-offer .container{
+
+}
+#main-content #special-offer .text{
+	background-color: #0075bf;
+}
+#main-content #special-offer .text p{
+	color: white;
+	width: 50%;
+	font-size: 16px;
+	position: relative;
+	left: 25%;
+	top: 35%;
+}
+#main-content #special-offer .text p span.line-two{
+	font-size: 30px;
+}
+#main-content #special-offer .text p span.line-three{
+	font-size: 40px;
+	font-weight: 900;
+}
+#main-content #special-offer .special-content{
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+#main-content #special-offer .special-content .layer1{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	background-color: #0f1e34;
+  opacity: 0.9;
+}
+#main-content #special-offer .special-content .special-text{
+	position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /*padding-top: 30px;*/
+}
+#main-content #special-offer .special-content .special-title{
+	/*margin-bottom: -10px;*/
+	font-size: 15px;
+}
+#main-content #special-offer .special-content .special-title .discount{
+	font-size: 25px;
+}
+#main-content #special-offer .special-content .special-title .off-text-yellow-square{
+	font-size: 15px;
+	background-color: #cf6e10;
+	padding: 3px 10px;
+	margin-left: 5px;
+}
+#main-content #special-offer .special-content .special-offer-tour .tour-services{
+	padding: 0;
+}
+#main-content #special-offer .special-content .special-offer-tour .tour-services p{
+	margin-bottom: 10px;
+}
+#main-content #special-offer .special-content .special-offer-tour .tour-location{
+	margin-top: 30px;
+	font-weight: 900;
+}
+#main-content #special-offer .special-content .special-offer-tour .tour-description{
+	width: 100%;
+	margin-top: 10px;
+}
+#main-content #special-offer .special-content .special-offer-tour .tour-price{
+	/*margin-bottom: 10px;*/
+}
+
+#main-content #special-offer .special-content .special-offer-tour .tour-price .discount-price{
+	font-size: 20px;
+}
+#main-content #special-offer .special-content .special-offer-tour .tour-price .original-price{
+	font-size: 15px;
+	text-decoration: line-through;
+}
+#main-content #special-offer .special-content .special-offer-tour .tour-price .tour-rating{
+	margin-top: 5px;
+}
+#main-content #special-offer .special-content .special-offer-tour .tour-price .tour-rating span{
+	margin-left: 10px;	
+	font-size: 10px;
+}
+#main-content #special-offer .special-content .special-offer-tour .offer-buttons{
+	margin-top: 0;
+}
+#main-content #special-offer .special-content .special-offer-tour .offer-buttons #book-now{
+	color: white;
+	border: none;
+	font-size: 10px;
+	padding: 10px 20px;
+	background-color: #0075bf;
+}
+#main-content #special-offer .special-content .special-offer-tour .offer-buttons #book-now:hover{
+	background-color: #0f1e34;
+	border: 1px solid white;
+	padding: 9px 19px;
+}
+#main-content #special-offer .special-content .special-offer-tour .offer-buttons #read-more{
+	border: 1px solid white;
+	background-color: #0f1e34;
+	color: white;
+	font-size: 10px;
+	padding: 9px 19px;
+	margin-left: 15px;
+}
+#main-content #special-offer .special-content .special-offer-tour .offer-buttons #read-more:hover{
+	background-color: #0075bf;
+	border: none;
+}
+#main-content #special-offer .special-content .background-layer img{
+	height: 500px;
+	width: 100%;
+}
+
+
+/*7. LASTEST BLOGS*/
+#main-content #lastest-blogs{
+	width: 100%;
+	margin: auto;
+}
+#main-content #lastest-blogs .blog-container{	
+	margin-right: 20px;
+	margin: auto;
+	padding: 0;
+	margin-left: 20px;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.46);
+	-moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.46);
+	box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.46);
+}
+#main-content #lastest-blogs .blog-container img{
+	width: 100%;
+}
+#main-content #lastest-blogs .blog-container .blog-content{
+	margin-top: 20px;
+	padding: 0px 20px 20px 20px;
+}
+#main-content #lastest-blogs .blog-container .blog-content .blog-time{
+	opacity: 0.8;
+}
+#main-content #lastest-blogs .blog-container .blog-content .blog-text{
+
+}
+#main-content #lastest-blogs .blog-container .blog-content .blog-text .blog-title{
+	font-weight: 800;
+}
+#main-content #lastest-blogs .blog-container .blog-content .blog-text p{
+	opacity: 0.8;
+}
+#main-content #lastest-blogs .blog-container .blog-content .blog-text a{
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 800;
+}
+
+
+
+/*END MAIN CONTENT*/
+
+/*SUBCRIBE PANEL*/
+#subscribe-panel{
+	background-color: #002854;
+	color: white;
+	padding: 50px;
+	margin-top: 20px;
+}
+#subscribe-panel .container{
+	display: block;
+}
+#subscribe-panel .subscribe-text{
+	font-size: 30px;
+	font-weight: 500;
+}
+#subscribe-panel .subscribe-content{
+
+}
+#subscribe-panel .subscribe-content #subscribe-input{
+	display: flex;
+}
+#subscribe-panel .subscribe-content .input-field{
+	width: 80%;
+	padding: 0;
+}
+#subscribe-panel .subscribe-content .form-control{
+	border-radius: 0px;
+	font-size: 12px;
+}
+#subscribe-panel .subscribe-content .action{
+	width: 20%;
+}
+#subscribe-panel .subscribe-content .btn-primary{
+	border-radius: 0px;
+	border: none;
+	font-size: 9px;
+	padding: 10px 20px;
+	background-color: black;
+}
+#subscribe-panel .subscribe-content .btn-primary:hover{
+	opacity: 0.8;
+}
+
+
+/*END SUBCRIBE PANEL*/
+
+/*FOOTER*/
+footer{
+	padding: 100px 0px 50px 0px;
+}
+footer #information {
+	padding-right: 50px;
+}
+footer #information #about-web h3 {
+	font-weight: 900;
+	padding-bottom: 20px;
+}
+footer #information #about-web p {
+	width: 300px;
+	font-size: 85%;
+}
+footer #information #social-media{
+	padding-top: 20px;
+}
+footer #information #social-media ul {
+	display: grid;
+	grid-template-columns: repeat(3, 30px);
+	opacity: 0.8;
+}
+footer .footer-list h6 {
+	font-weight: 700;
+}
+footer .footer-list h6 {
+	padding-top: 10px;
+}
+footer .footer-list ul {
+	padding-top: 10px;
+}
+footer .footer-list li {
+	padding-bottom: 10px;
+}
+footer .footer-list li a {
+	font-size: 14px;
+	margin-bottom: 0px;
+	color: black;
+	opacity: 0.8;
+	text-decoration: none;
+}
+footer .footer-list li a:hover {
+	color: #2596be;
+}
+/*END FOOTER*/
+
+
+/*COPYRIGHT*/
+#copyright-wrapper{
+	background-color: #e6e9f0;
+	min-height: 100px;
+	margin-top: 5px;
+  padding: 35px 0px;
+  line-height: 40px;
+}
+#copyright-wrapper p {
+	font-size: 14px;
+}
+#copyright-wrapper span{
+	font-weight: 450;
+	text-decoration: underline;
+}
+#copyright-wrapper #payment{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+#copyright-wrapper .payment-icon{
+	height: 30px;
+	width: 30px;
+	margin-left: 10px;
+
+}
+/*END COPYRIGHT*/
+
+
+/*FOR MANY SCREENS*/
+/* Extra large screens */
+@media (min-width: 1200px){
+	/*PRE HEADER*/
+	#pre-header-nav .container #contact{
+		top: 3px;
+	}
+	/*END PRE HEADER*/
+
+	/*MAIN CONTENT*/
+	/*1. PROS*/
+	#main-content .pros-content{
+		width: 30%;
+	}
+
+	/*3. DISCOUNT*/
+	#discount .discount-text{
+		margin-top: 100px;
+	}	
+
+	/*4. FEATURE PACKAGES*/
+	#main-content #features .tour-item{
+		width: 32%;
+	}	
+
+	/*5. CLIENTS REVIEWS*/	
+	#main-content #client-reviews .review-content{	
+		width: 30%;
+	}
+
+	/*6. SPECIAL OFFER*/
+
+	/*7. LASTEST BLOGS*/
+	#main-content #lastest-blogs .blog-container{	
+		width: 30%;
+	}
+
+	/*END MAIN CONTENT*/
+
+	/*SUBSCRIBE PANEL*/
+	#subscribe-panel .subscribe-text{
+		margin-left: 100PX;
+	}
+	/*END SUBSCRIBE PANEL*/
+}
+
+/* Large screens */
+@media (min-width: 992px) and (max-width: 1199px){
+	/*PRE HEADER*/
+	#pre-header-nav .container #contact{
+		top: 5px;
+	}
+	/*END PRE HEADER*/
+	/*BANNER*/
+	#main-content #banner{
+		background: url('../resources/img/banner/banner-1199.jpg') no-repeat;
+		width: 100%;
+		height: 572px;
+	}
+	#main-content #banner .container{
+		position: relative;
+	 	top: 35%;
+	  left: 0%;
+	  transform: translate(0%, 0%);
+	}
+	#main-content #banner .container .banner-text{
+		padding-bottom: 65px;
+	}
+	#main-content #banner .container .banner-text h1{
+		color: white;
+		font-weight: 800;
+		font-size: 30px;
+	}
+	#main-content #banner .container .banner-text h1 span{
+		font-weight: 900;
+		font-size: 40px;
+	}
+	#main-content #banner .container .banner-text p{
+		color: white;
+		font-weight: 200;
+		font-size: 22px;
+	}
+	#main-content #banner #select-trip .form-group{
+		margin-bottom: 10px;
+	}
+	#main-content #banner #select-trip .form-control{
+		border-radius: 0px;
+		font-size: 13px;
+		padding-left: 40px;
+		border: none;
+	}
+	#main-content #banner #select-trip{
+		margin-bottom: 10px;
+	}
+	#main-content #banner #select-trip button.btn-primary{
+		width: 100%;
+		border-radius: 0px;
+		font-size: 12px;
+	}
+	#main-content #banner #select-trip .banner-icon{
+
+		color: white;
+		background-color: black;
+		padding: 11px 12px;
+		font-size: 10px;
+		position: absolute;
+	}
+	/*END BANNER*/
+
+
+	/*MAIN CONTENT*/
+	/*1. PROS*/
+	#main-content .pros-content{
+		margin-right: 10px;
+		width: 32%;
+		margin-top: 10px;
+	}
+
+	/*2. TOP DESTINATIONS*/
+	#main-content #destinations .travel-background{
+		position: absolute;
+		top: 80%;
+	  left: 2%;
+	  transform: translate(-35%, -5%);
+		z-index: 1;
+	}
+	#main-content #destinations .travel-background img{
+		position: relative;
+		top: 0%;
+	  left: 0%;
+	  transform: translate(0%, 0%);
+	}
+
+	/*3. DISCOUNT*/
+	#main-content #discount{
+		background: url('../resources/img/discount/discount-1199.jpg') no-repeat;
+		width: 100%;
+		height: 400px;
+		margin-top: 9%;
+	}
+	#main-content #discount .discount-text{
+		margin-top: 70px;
+	}
+	#main-content #discount .discount-text p{
+		font-size: 22px;
+	}
+	#main-content #discount .discount-text p span{
+		font-size: 17px;
+	}
+
+	/*4. FEATURE PACKAGES*/
+	#main-content #features .tour-item{
+		width: 32%;
+	}	
+
+	/* 5. CLIENTS REVIEWS*/
+	#main-content #client-reviews .carousel-item .review-content{
+		margin: auto;
+		/*margin-left: 0px;*/
+		background-color: white;
+		padding: 0;
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	#main-content #client-reviews .review-content  img{
+		width: 50px;
+		height: 50px;.
+	}
+	#main-content #client-reviews .review-content p i{
+		padding-top: 10px;
+		font-size: 15px;
+	}
+	#main-content #client-reviews .review-text .review{
+		font-size: 13px;
+	}
+	#main-content #client-reviews .review-text .client-information{
+		opacity: 0.8;
+	}
+	#main-content #client-reviews .review-text .client-information .client-name{
+		font-size: 15px;
+		font-weight: 700;
+	}
+	#main-content #client-reviews .review-text .client-information .client-address{
+		font-size: 13px;
+		font-weight: 500;
+	}
+
+	/*6. SPECIAL OFFER*/
+	#main-content #special-offer .special-content .special-title{
+		/*margin-bottom: -10px;*/
+		font-size: 14px;
+	}
+	#main-content #special-offer .special-content .special-title .discount{
+		font-size: 23px;
+	}
+	#main-content #special-offer .special-content .special-title .off-text-yellow-square{
+		font-size: 14px;
+		padding: 2px 8px;
+	}
+	#main-content #special-offer .special-content .special-offer-tour .tour-services p{
+		margin-bottom: 10px;
+		font-size: 12px;
+	}
+	#main-content #special-offer .special-content .special-offer-tour .tour-location{
+		margin-top: 20px;
+	}
+	#main-content #special-offer .special-content .special-offer-tour .tour-description{
+		width: 100%;
+		margin-top: 5px;
+	}
+	#main-conten9 #special-offer .special-content .special-offer-tour .tour-price .discount-price{
+		font-size: 18px;
+	}
+	#main-content #special-offer .special-content .special-offer-tour .tour-price .original-price{
+		font-size: 14px;
+	}
+	#main-content #special-offer .special-content .special-offer-tour .tour-price .tour-rating{
+		margin-top: 6px;
+	}
+
+	#main-content #special-offer .special-content .special-offer-tour .offer-buttons{
+		margin-top: 0;
+	}
+	#main-content #special-offer .special-content .background-layer img{
+		height: 450px;
+		width: 100%;
+	}
+
+	/*7. LASTEST BLOGS*/
+	#main-content #lastest-blogs .blog-container{	
+		width: 31%;
+	}
+
+	/*END MAIN CONTENT*/
+
+	/*SUBCRIBE PANEL*/
+	#subscribe-panel .subscribe-text{
+		font-size: 22px;
+		font-weight: 500;
+		padding-left: 80px;
+	}
+	#subscribe-panel .subscribe-content p{
+		font-size: 13px;
+	}
+	#subscribe-panel .subscribe-content #subscribe-input .input-field input{
+		font-size: 11px;
+	}
+	#subscribe-panel .subscribe-content #subscribe-input .action button{
+		font-size: 8px;
+		padding: 10px 12px;
+	}
+	/*END SUBSCRIBE PANEL*/
+	/*END SUBSCRIBE PANEL*/
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 991px){
+	.carousel-inner .carousel-item{
+		height: 550px;
+		margin: auto;
+	}
+	/*PRE HEADER*/
+	#pre-header-nav .container #contact{
+		top: 9px;
+	}
+	/*END PRE HEADER*/
+
+		/*HEADER*/
+		#header-nav .navbar-collapse .nav-item a:hover{
+			color: white;
+			background-color: #2596be;
+		}
+		/*END HEADER*/
+
+	/*BANNER*/
+	#main-content #banner{
+		background: url('../resources/img/banner/banner-991.jpg') no-repeat;
+		width: 100%;
+		height: 473px;
+	}
+	#main-content #banner .container{
+		position: relative;
+	 	top: 30%;
+	  left: 0%;
+	  transform: translate(0%, 0%);
+	}
+	#main-content #banner .container .banner-text{
+		padding-bottom: 55px;
+	}
+	#main-content #banner .container .banner-text h1{
+		color: white;
+		font-weight: 800;
+		font-size: 26px;
+	}
+	#main-content #banner .container .banner-text h1 span{
+		font-weight: 900;
+		font-size: 35px;
+	}
+	#main-content #banner .container .banner-text p{
+		color: white;
+		font-weight: 200;
+		font-size: 18px;
+	}
+	#main-content #banner #select-trip .form-group{
+		margin-bottom: 5px;
+	}
+	#main-content #banner #select-trip .form-control{
+		border-radius: 0px;
+		font-size: 10px;
+		padding-left: 40px;
+		border: none;
+	}
+	#main-content #banner #select-trip{
+		margin-bottom: 10px;
+	}
+	#main-content #banner #select-trip button.btn-primary{
+		width: 100%;
+		border-radius: 0px;
+		font-size: 10px;
+	}
+	#main-content #banner #select-trip .banner-icon{
+		color: white;
+		background-color: black;
+		padding: 9px 10px;
+		font-size: 10px;
+		position: absolute;
+	}
+	/*END BANNER*/
+
+	/*MAIN CONTENT*/
+	/*1. PROS*/
+	#main-content #pros-section .pros-content{
+		margin-top: 10px;
+	}
+
+	/*2. TOP DESTINATIONS*/
+	#main-content #destinations .travel-background{
+		position: absolute;
+		top: 70%;
+	  left: 2%;
+	  transform: translate(-35%, 3%);
+		z-index: 1;
+	}
+	#main-content #destinations .travel-background img{
+		position: relative;
+		top: 0%;
+	  left: 0%;
+	  transform: translate(0%, 0%);
+	}
+
+	/*3. DISCOUNT*/
+	#main-content #discount{
+		background: url('../resources/img/discount/discount-991.jpg') no-repeat;
+		width: 100%;
+		height: 330px;
+		margin-top: 6%;
+	}
+	#main-content #discount .discount-text{
+		margin-top: 60px;
+	}
+	#main-content #discount .discount-text p{
+		font-size: 20px;
+	}
+	#main-content #discount .discount-text p span{
+		font-size: 15px;
+	}
+	#main-content #discount .time-countdown .time-title{
+		font-size: 11px;
+		margin-bottom: -10px;
+	}
+	#main-content #discount .time-countdown .circle {
+	  width: 50px;
+	  height: 50px;
+	  line-height: 42px;
+	  border-radius: 50%;
+	  font-size: 16px;
+	}
+	#main-content #discount .join-us-btn{
+		margin: auto;
+		margin-top: 30px;
+	}
+	#main-content #discount .join-us-btn button{
+		background-color: black;
+		color: white;
+		font-size: 10px;
+	}
+
+	/* 4. FEATURE PACKAGES*/
+	#main-content #features{
+		width: 100%;
+		margin: auto;
+		display: block;
+	}
+	#main-content #features .tour-item{	
+		width: 31%;
+	}
+	#main-content #features .tour-item img{
+		width: 100%;
+	}
+	#main-content #features .tour-item .tour-text{
+		width: 100%;
+		padding: 10px 10px 0px 10px;
+	}
+	#main-content #features .tour-item .tour-booking{
+		padding: 0px 10px 50px 10px;
+	}
+	#main-content #features .tour-item .tour-booking button{
+		padding: 10px 20px;
+	}
+	#main-content #features .tour-item .tour-booking .price-text{
+		color: #096dc9;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	/* 5. CLIENTS REVIEWS*/
+	#main-content #client-reviews .carousel-item {
+		height: 350px;
+		margin-left: 20px;
+	}
+	#main-content #client-reviews .carousel-item .review-content{	
+		width: 31%;
+		margin: auto;
+		padding: 0;
+		padding-top: 10px;
+	}
+	#main-content #client-reviews .carousel-item .review-content  img{
+		width: 50px;
+		height: 50px;
+	}
+	#main-content #client-reviews .carousel-item .review-text .review{
+		font-size: 10px;
+		width: 100%;
+	}
+	#main-content #client-reviews .carousel-item .review-text .review p{
+		font-size: 12px;
+	}
+	#main-content #client-reviews .carousel-item .review-text .client-information .client-name{
+		font-size: 8px;
+	}
+	#main-content #client-reviews .carousel-item .review-text .client-information .client-address{
+		font-size: 8px;
+	}
+
+	/*6. SPECIAL OFFER*/
+	#main-content #special-offer .text p{
+		color: white;
+		width: 50%;
+		font-size: 16px;
+		position: relative;
+		left: 5%;
+		top: 40%;
+	}
+
+	/*7. LASTEST BLOGS*/
+	#main-content #lastest-blogs .blog-container{	
+		width: 30%;
+	}
+
+	/*END MAIN CONTENT*/
+
+	/*SUBCRIBE PANEL*/
+	#subscribe-panel .subscribe-text{
+		font-size: 20px;
+		font-weight: 500;
+	}
+	#subscribe-panel .subscribe-content p{
+		font-size: 12px;
+	}
+	#subscribe-panel .subscribe-content #subscribe-input .input-field input{
+		font-size: 11px;
+	}
+	#subscribe-panel .subscribe-content #subscribe-input .action button{
+		font-size: 8px;
+		padding: 9px 10px;
+	}
+	/*END SUBSCRIBE PANEL*/
+
+	/*FOOTER*/
+	footer #information{
+		margin: auto;
+		position: relative;
+		left: 2%;
+	}
+	footer #information #about-web h3{
+		padding: 0;
+		margin: auto;
+		text-align: center;
+	}
+	footer #information #about-web p{
+		margin: auto;
+		margin-top: 10px;
+		text-align: center;
+		width: 100%;
+	}
+	footer #information #social-media{
+		text-align: center;
+		margin: auto;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	footer #information #social-media ul{
+		display: inline-grid;
+	}
+	footer .footer-list{
+		text-align: center;
+	}
+	/*END FOOTER*/
+}
+
+/* Small screens */
+@media (min-width: 576px) and (max-width: 767px){
+	.carousel-inner .carousel-item{
+		height: 570px;
+		margin: auto;
+	}
+	/*PRE HEADER*/
+	#pre-header-nav .container #contact{
+		top: 9px;
+	}
+	/*END PRE HEADER*/
+
+		/*HEADER*/
+		#header-nav .navbar-collapse .nav-item a:hover{
+			color: white;
+			background-color: #2596be;
+		}
+		/*END HEADER*/
+
+
+	/*BANNER*/
+	#main-content #banner{
+		background: url('../resources/img/banner/banner-767.jpg') no-repeat;
+		width: 100%;
+		height: 366px;
+	}
+	#main-content #banner .container{
+		width: 90%;
+		position: relative;
+	 	top: 30%;
+	  left: 0%;
+	  transform: translate(0%, 0%);
+	}
+	#main-content #banner .container .banner-text{
+		padding-bottom: 25px;
+	}
+	#main-content #banner .container .banner-text h1{
+		color: white;
+		font-weight: 800;
+		font-size: 25px;
+	}
+	#main-content #banner .container .banner-text h1 span{
+		font-weight: 900;
+		font-size: 34px;
+	}
+	#main-content #banner .container .banner-text p{
+		color: white;
+		font-weight: 200;
+		font-size: 15px;
+	}
+	#main-content #banner #select-trip .form-group{
+		margin-bottom: 5px;
+	}
+	#main-content #banner #select-trip .form-control{
+		font-size: 10px;
+		padding-left: 35px;
+	}
+	#main-content #banner #select-trip button.btn-primary{
+		font-size: 12px;
+	}
+	#main-content #banner #select-trip .banner-icon{
+		padding: 9px 10px;
+		font-size: 10px;
+	}
+	/*END BANNER*/
+
+	/*MAIN CONTENT*/
+	/*1. PROS*/
+	#main-content #pros-section .pros-content{
+		margin-top: 10px;
+	}
+	/*END 1. PROS*/  
+
+	/*2. TOP DESTINATIONS*/
+	#main-content #destinations{
+		width: 100%;
+		margin: auto;
+	}
+	#main-content #destinations .dest-item p{
+		color: white;
+		font-size: 18px;
+		font-weight: 700;
+		text-align: center;
+	  	position: absolute;
+	 	top: 50%;
+	  	left: 50%;
+	  	transform: translate(-50%, -50%);
+	}
+	/*END 2. TOP DESTINATIONS*/ 
+
+	/*3. DISCOUNT*/
+	#main-content #discount{
+		background: url('../resources/img/discount/discount-767.jpg') no-repeat;
+		width: 100%;
+		height: 255px;
+		position: relative;
+		margin-top: 50px;
+	}
+	#main-content #discount .discount-text{
+		margin-top: 30px;
+	}
+	#main-content #discount .discount-text p{
+		font-size: 18px;
+	}
+	#main-content #discount .discount-text p span{
+		font-size: 13px;
+	}
+	#main-content #discount .time-countdown .time-title{
+		font-size: 11px;
+		color: white;
+		margin-bottom: -10px;
+	}
+	#main-content #discount .time-countdown .circle {
+	  width: 50px;
+	  height: 50px;
+	  line-height: 42px;  
+	  font-size: 14px;
+	}
+	#main-content #discount .join-us-btn{
+		margin-top: 20px;
+	}
+	#main-content #discount .join-us-btn button{
+		background-color: black;
+		color: white;
+		font-size: 10px;
+	}
+
+	/* 4. FEATURE PACKAGES*/
+	#main-content #features .tour-item{
+		width: 90%;
+	}
+	#main-content #features .tour-item img{
+		width: 40%;
+		float: left;
+	}
+	#main-content #features .tour-item .tour-text{
+		width: 60%;
+		float: right;
+		padding: 0;
+		padding: 25px 5px 0px 20px;
+	}
+	#main-content #features .tour-item .tour-text h6{
+		font-weight: 700;
+	}
+	#main-content #features .tour-item .tour-text p{
+		font-size: 11px;
+		opacity: 0.8;
+	}
+	#main-content #features .tour-item .tour-booking{
+		padding: 0;
+		padding-left: 20px;
+		float: left;
+		margin-bottom: -15px;
+	}
+	#main-content #features .tour-item .tour-booking button{
+		background-color: #0274bd;
+		color: white;
+		border: none;
+		padding: 5px 10px;
+		float: left;
+	}
+	#main-content #features .tour-item .tour-booking button:hover{
+		background-color: #002e79;
+	}
+	#main-content #features .tour-item .tour-booking .price-text{
+		color: #096dc9;
+		font-size: 15px;
+		font-weight: bold;
+		margin-top: 5px;
+		margin-left: 90px;
+	}
+
+	/* 5. CLIENTS REVIEWS*/
+	#main-content #client-reviews .carousel-item {
+		height: 600px;
+	}
+	#main-content #client-reviews .carousel-item .review-content{	
+		width: 90%;
+		margin: 0 auto;
+		padding: 0;
+		padding-top: 10px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	#main-content #client-reviews .carousel-item .review-content  img{
+		width: 50px;
+		height: 50px;
+		float: left;
+		position: relative;
+		left: 50px;
+	}
+	#main-content #client-reviews .carousel-item .review-text .review{
+		font-size: 13px;
+		width: 100%;
+		position: relative;
+		top: 50px;
+	}
+	#main-content #client-reviews .carousel-item .review-text .client-information{
+		position: relative;
+		bottom: 90px;
+		right: 00px;
+	}
+	#main-content #client-reviews .carousel-item .review-text .client-information .client-name{
+		font-size: 10px;
+	}
+	#main-content #client-reviews .carousel-item .review-text .client-information .client-address{
+		font-size: 8px;
+	}
+
+	/*6. SPECIAL OFFER*/
+	#main-content #special-offer .text p{
+		color: white;
+		width: 50%;
+		font-size: 16px;
+		position: relative;
+		left: 30%;
+		top: 10%;
+	}
+
+	/*7. LASTEST BLOGS*/
+	#main-content #lastest-blogs .blog-container{	
+		width: 90%;
+		margin: auto;
+		display: block;
+		margin-bottom: 15px;
+	}
+	#main-content #lastest-blogs .blog-container img{
+		width: 40%;
+		float: left;
+	}
+	#main-content #lastest-blogs .blog-container .blog-content{
+		width: 60%;
+		float: right;
+		margin: 0;
+		padding: 0px 0px 0px 10px;
+		margin-top: 10px;
+	}
+	#main-content #lastest-blogs .blog-container .blog-content .blog-time{
+		opacity: 0.8;
+		font-size: 11px;
+	}
+	#main-content #lastest-blogs .blog-container .blog-content .blog-text{
+		margin-top: -15px;
+	}
+	#main-content #lastest-blogs .blog-container .blog-content .blog-text .blog-title{
+		font-weight: 600;
+	}
+	#main-content #lastest-blogs .blog-container .blog-content .blog-text p{
+		opacity: 0.8;
+		font-size: 11px;
+		margin-bottom: 0px;
+	}
+	#main-content #lastest-blogs .blog-container .blog-content .blog-text a{
+		text-decoration: none;
+		font-size: 12px;
+		font-weight: 800;
+		margin-bottom: 10px;
+	}
+	/*END MAIN CONTENT*/
+
+	/*SUBCRIBE PANEL*/
+	#subscribe-panel .subscribe-text{
+		font-size: 20px;
+		font-weight: 500;
+	}
+	#subscribe-panel .subscribe-content p{
+		font-size: 12px;
+	}
+	#subscribe-panel .subscribe-content #subscribe-input .input-field input{
+		font-size: 11px;
+	}
+	#subscribe-panel .subscribe-content #subscribe-input .action button{
+		font-size: 8px;
+		padding: 9px 10px;
+	}
+	/*END SUBSCRIBE PANEL*/
+
+	/*FOOTER*/
+	footer #information{
+		position: relative;
+		left: 3%;
+	}
+	footer #information #about-web h3{
+		padding: 0;
+		margin: auto;
+		text-align: center;
+	}
+	footer #information #about-web p{
+		margin: auto;
+		margin-top: 8px;
+		text-align: center;
+	}
+	footer #information #social-media{
+		text-align: center;
+		margin: auto;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	footer #information #social-media ul{
+		display: inline-grid;
+	}
+	footer .footer-list{
+		text-align: center;
+	}
+	/*END FOOTER*/
+
+	/*COPYRIGHT*/
+	#copyright-wrapper{
+		min-height: 70px;
+	  padding: 10px 0px;
+	}
+	#copyright-wrapper .copyright-text p{
+		font-size: 11px;
+	}
+	#copyright-wrapper #payment{
+		margin-top: 5px;
+	}
+	#copyright-wrapper .payment-icon{
+		height: 22px;
+		width: 22px;
+		margin-left: 10px;
+	}	
+	/*END COPYRIGHT*/
+}
+
+/* Extra small screens */
+@media (max-width: 576px){
+	.carousel-inner .carousel-item{
+		height: 550px;
+		margin: auto;
+	}
+	/*PRE HEADER*/
+	#pre-header-nav .container #contact{
+		top: 10px;
+	}
+	/*END PRE HEADER*/
+
+	/*HEADER*/
+	#header-nav .navbar-collapse .nav-item a:hover{
+		color: white;
+		background-color: #2596be;
+	}
+	/*END HEADER*/
+
+	/*BANNER*/
+	#main-content #banner{
+		background: url('../resources/img/banner/banner-576.jpg') no-repeat;
+		width: 100%;
+		height: 274px;
+	}
+	#main-content #banner .container{
+		width: 90%;
+		position: relative;
+	 	top: 15%;
+	  left: 1%;
+	  transform: translate(0%, 0%);
+	}
+	#main-content #banner .container .banner-text{
+		padding-bottom: 5px;
+	}
+	#main-content #banner .container .banner-text h1{
+		color: white;
+		font-weight: 800;
+		font-size: 18px;
+	}
+	#main-content #banner .container .banner-text h1 span{
+		font-weight: 900;
+		font-size: 24px;
+	}
+	#main-content #banner .container .banner-text p{
+		color: white;
+		font-weight: 200;
+		font-size: 15px;
+	}
+	#main-content #banner #select-trip .form-group{
+		margin-bottom: 5px;
+	}
+	#main-content #banner #select-trip .form-control{
+		border-radius: 0px;
+		font-size: 10px;
+		padding-left: 30px;
+		border: none;
+	}
+	#main-content #banner #select-trip{
+		margin-bottom: 10px;
+	}
+	#main-content #banner #select-trip button.btn-primary{
+		width: 100%;
+		border-radius: 0px;
+		font-size: 10px;
+	}
+	#main-content #banner #select-trip .banner-icon{
+		color: white;
+		background-color: black;
+		padding: 9px 10px;
+		font-size: 10px;
+		position: absolute;
+	}
+	/*END BANNER*/
+
+	/*MAIN CONTENT*/
+	/*1. PROS*/
+	#main-content #pros-section{
+		margin-top: 20px;
+	}
+	#main-content #pros-section .pros-content{
+		width: 90%;
+		padding: 10px;
+		margin: auto;
+		margin-top: 10px;
+	}
+	#main-content .pros-content img{
+		width: 30px;
+		height: 30px;
+	}
+	#main-content .pros-content .pros-text{
+		padding-left: 10px;
+	}
+	#main-content .pros-content .pros-text h6{
+		font-weight: 800;
+	}
+	#main-content .pros-content .pros-text p{
+		opacity: 0.8;
+		font-size: 11px;
+	}
+
+	/*2. TOP DESTINATIONS*/
+	#main-content #destinations{
+		width: 100%;
+		margin: auto;
+	}
+	#main-content #destinations .dest-item p{
+		color: white;
+		font-size: 15px;
+		font-weight: 700;
+		text-align: center;
+	  position: absolute;
+	 	top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+
+ 	/*3. DISCOUNT*/
+	#main-content #discount{
+		background: url('../resources/img/discount/discount-576.jpg') no-repeat;
+		width: 100%;
+		height: 192px;
+	}
+	#main-content #discount .container{
+		width: 80%;
+	}	
+	#main-content #discount .discount-text{
+		text-align: center;
+		color: white;
+		padding: 0;
+		margin-top: 10px;
+	}
+	#main-content #discount .discount-text p{
+		font-size: 15px;
+
+	}
+	#main-content #discount .discount-text p span{
+		font-size: 11px;
+	}
+	#main-content #discount .time-countdown .time-title{
+		font-size: 10px;
+		color: white;
+		margin-bottom: -10px;
+	}
+	#main-content #discount .time-countdown .circle {
+	  width: 40px;
+	  height: 40px;
+	  line-height: 38px;
+	  border-radius: 50%;
+	  border: 3px solid white;
+	  font-size: 15px;
+	  color: white;
+	  text-align: center;
+	  margin: auto;
+	}
+	#main-content #discount .join-us-btn{
+		margin: auto;
+		margin-top: 10px;
+	}
+	#main-content #discount .join-us-btn button{
+		background-color: black;
+		color: white;
+		font-size: 10px;
+		padding: 5px 0px;
+	}
+
+	/* 4. FEATURE PACKAGES*/
+	#main-content #features .tour-item{
+		width: 90%;
+		margin: auto;
+		margin-bottom: 15px;
+	}
+	#main-content #features .tour-item img{
+		width: 40%;
+		float: left;
+	}
+	#main-content #features .tour-item .tour-text{
+		width: 60%;
+		float: right;
+		padding: 0;
+		padding: 10px 5px 0px 5px;
+	}
+	#main-content #features .tour-item .tour-text h6{
+		font-weight: 700;
+	}
+	#main-content #features .tour-item .tour-text p{
+		font-size: 11px;
+		opacity: 0.8;
+	}
+	#main-content #features .tour-item .tour-booking{
+		padding: 0;
+		padding-left: 5px;
+		float: left;
+		margin-bottom: -15px;
+	}
+	#main-content #features .tour-item .tour-booking button{
+		background-color: #0274bd;
+		color: white;
+		border: none;
+		padding: 5px 10px;
+		float: left;
+	}
+	#main-content #features .tour-item .tour-booking button:hover{
+		background-color: #002e79;
+	}
+	#main-content #features .tour-item .tour-booking .price-text{
+		color: #096dc9;
+		font-size: 15px;
+		font-weight: bold;
+		margin-top: 5px;
+		margin-left: 90px;
+	}
+
+	/* 5. CLIENTS REVIEWS*/
+	#main-content #client-reviews .carousel-item {
+		height: 600px;
+		margin-left: 10px;
+	}
+	#main-content #client-reviews .carousel-item .review-content{	
+		width: 90%;
+		margin: auto;
+		padding: 0;
+		padding-top: 10px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	#main-content #client-reviews .carousel-item .review-content  img{
+		width: 50px;
+		height: 50px;
+		float: left;
+		position: relative;
+		left: 70px;
+	}
+	#main-content #client-reviews .carousel-item .review-text .review{
+		font-size: 13px;
+		width: 100%;
+		position: relative;
+		top: 50px;
+	}
+	#main-content #client-reviews .carousel-item .review-text .client-information{
+		position: relative;
+		bottom: 85px;
+	}
+	#main-content #client-reviews .carousel-item .review-text .client-information .client-name{
+		font-size: 10px;
+	}
+	#main-content #client-reviews .carousel-item .review-text .client-information .client-address{
+		font-size: 8px;
+	}
+
+	/*6. SPECIAL OFFER*/
+	#main-content #special-offer .text p{
+		color: white;
+		width: 50%;
+		font-size: 16px;
+		position: relative;
+		left: 30%;
+		top: 10%;
+	}
+
+	/*7. LASTEST BLOGS*/
+	#main-content #lastest-blogs .blog-container{	
+		width: 90%;
+		margin: auto;
+		display: block;
+		margin-bottom: 15px;
+	}
+	#main-content #lastest-blogs .blog-container img{
+		width: 40%;
+		float: left;
+	}
+	#main-content #lastest-blogs .blog-container .blog-content{
+		width: 60%;
+		float: right;
+		margin: 0;
+		padding: 0px 0px 0px 10px;
+		margin-top: 10px;
+	}
+	#main-content #lastest-blogs .blog-container .blog-content .blog-time{
+		opacity: 0.8;
+		font-size: 11px;
+	}
+	#main-content #lastest-blogs .blog-container .blog-content .blog-text{
+		margin-top: -15px;
+	}
+	#main-content #lastest-blogs .blog-container .blog-content .blog-text .blog-title{
+		font-weight: 600;
+	}
+	#main-content #lastest-blogs .blog-container .blog-content .blog-text p{
+		opacity: 0.8;
+		font-size: 11px;
+		margin-bottom: 0px;
+	}
+	#main-content #lastest-blogs .blog-container .blog-content .blog-text a{
+		text-decoration: none;
+		font-size: 12px;
+		font-weight: 800;
+		margin-bottom: 10px;
+	}
+	/*END MAIN CONTENT*/
+
+	/*SUBCRIBE PANEL*/
+	#subscribe-panel .subscribe-text{
+		font-size: 18px;
+		font-weight: 500;
+	}
+	#subscribe-panel .subscribe-content p{
+		font-size: 11px;
+	}
+	#subscribe-panel .subscribe-content #subscribe-input .input-field input{
+		font-size: 10px;
+	}
+	#subscribe-panel .subscribe-content #subscribe-input .action button{
+		font-size: 8px;
+		padding: 9px 10px;
+	}
+	/*END SUBSCRIBE PANEL*/
+
+	/*FOOTER*/
+	footer #information #about-web h3{
+		width: 90vw;
+		padding: 0;
+		text-align: center;
+	}
+	footer #information #about-web p{
+		margin: 0 auto;
+		width: 90vw;
+		text-align: center;
+	}
+	footer #information #social-media{
+		width: 90vw;
+		text-align: center;
+	}
+	footer #information #social-media ul{
+		display: inline-grid;
+	}
+	footer .footer-list{
+		text-align: center;
+	}
+	/*END FOOTER*/
+
+	/*COPYRIGHT*/
+	#copyright-wrapper{
+		min-height: 70px;
+	  padding: 10px 0px;
+	}
+	#copyright-wrapper .copyright-text p{
+		font-size: 10px;
+	}
+	#copyright-wrapper #payment{
+		margin-top: 4px;
+	}
+	#copyright-wrapper .payment-icon{
+		height: 20px;
+		width: 20px;
+		margin-left: 10px;
+	}	
+	/*END COPYRIGHT*/
+}
