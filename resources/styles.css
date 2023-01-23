@@ -2,8 +2,10 @@ body{
 	font-family: 'Libre Baskerville', serif;
 	box-sizing: border-box;
 	background-color: #f8f7f5;
-	font-size: 13px;
+	font-size: 12px;
 	color: black;
+	/*margin:0;*/
+  /*height:100%;*/
 }
 
 ul{
@@ -26,20 +28,23 @@ hr{
 
 .sect-title{
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 20px;
+	padding-top: 80px;
+	padding-bottom: 30px;
 }
-.sect-title h3{
+.sect-title h2{
 	font-weight: 900;
 }
 .sect-title p{
+	font-size: 14px;
 	text-align: center;
+	opacity: 0.8;
+	word-spacing: 1px;
 }
 .text-center{
 	text-align: center;
 }
 .active a{
-	color: #2596be !important;
+	color: #0075bf !important;
 }
 .fill-star{
 	color: gold;
@@ -54,10 +59,10 @@ hr{
 	border-radius: 50%;
 }
 .carousel-indicators .active{
-	background-color: #0274bd;
+	background-color: #0075bf;
 }
 .carousel-inner .carousel-item{
-	height: 600px;
+	height: 550px;
 	margin: auto;
 }
 button.black-btn:hover{
@@ -68,18 +73,14 @@ button.black-btn:hover{
 
 /*PRE HEADER*/
 #pre-header-nav {
-	padding: 10px 0px;
-}
+	padding-top: 10px;
+	margin-bottom: -10px;}
 #pre-header-nav .container{
 	display: flex;
 }
 #pre-header-nav .container #contact{
 	opacity: 0.8;
-	/*margin-top: 10px;*/
 	position: relative;
-}
-#pre-header-nav .container #contact p{
-
 }
 #pre-header-nav .container #contact p span{
 	margin-left: 20px;
@@ -93,7 +94,7 @@ button.black-btn:hover{
 	padding-left: 10px;
 }
 #pre-header-nav .container .navbar-toggler:hover{
-	color: #2596be;
+	color: #008ac7;
 }
 #pre-header-nav .container .navbar-collapse{
 	flex-grow: 0;
@@ -102,10 +103,11 @@ button.black-btn:hover{
 
 }
 #pre-header-nav .container #nav-list .nav-item a{
-	opacity: 0.8;
+	font-size: 14px;
+	padding-left: 27px;
 }
 #pre-header-nav .container #nav-list .nav-item a:hover{
-	color: #2596be;
+	color: #0075bf;
 }
 
 /*END PRE HEADER*/
@@ -122,11 +124,13 @@ button.black-btn:hover{
 	text-decoration: none;
 }
 #header-nav .navbar-brand a:hover{
-	opacity: 0.5;
+	opacity: 0.7;
+
 }
 #header-nav .container .navbar-brand h1{
 	font-weight: 900;
 	text-decoration: none;
+	color: #008acb;
 }
 #header-nav .container .navbar-brand h1 > span{
 	color: black;
@@ -142,47 +146,58 @@ button.black-btn:hover{
 }
 #header-nav .navbar-collapse .nav-item a{
 	text-align: center;
+	font-size: 15px;
+	color: black;
+	padding-left: 35px;
 }
 #header-nav .navbar-collapse .nav-item a:hover{
-	color: #2596be;
+	color: #0075bf;
 }
 #header-nav .navbar-collapse .nav-item .active{
-	color: #2596be;
+	color: #0075bf;
 }
 
 /*END HEADER*/
 
 /*BANNER*/
 #main-content #banner{
-	background: url('../resources/img/banner/banner-1399.jpg') no-repeat;
-	width: 100%;
-	height: 611px;
-}
-#main-content #banner .container{
-	width: 65%;
 	display: block;
+	margin: auto;
+	padding: 0;
+}
+#main-content #banner .jumpotron{
+	padding: 0;
 	position: relative;
- 	top: 30%;
-  /*left: %;
-  transform: translate(20%, 20%);*/
 }
-#main-content #banner .container .banner-text{
-	padding-bottom: 70px;
+#main-content #banner .jumpotron .banner-content{
+	position: absolute;
+  top: 40%;
+  left: 22%;
+  transform: translate( -2%, -7%);
+  width: 72%;
 }
-#main-content #banner .container .banner-text h1{
+#main-content #banner .container-fluid .banner-text h1{
 	color: white;
 	font-weight: 800;
-	font-size: 40px;
+	font-size: 45px;
+	line-height: 50px;
 }
-#main-content #banner .container .banner-text h1 span{
-	color: white;
+#main-content #banner .container-fluid .banner-text h1 span{
+	padding: 0;
+	margin-top: ;
 	font-weight: 900;
-	font-size: 55px;
+	font-size: 59px;
+	margin-top: 20px;
 }
-#main-content #banner .container .banner-text p{
+#main-content #banner .container-fluid .banner-text p{
 	color: white;
-	font-weight: 200;
+	font-weight: 500;
 	font-size: 25px;
+	margin-top: 20px;
+	letter-spacing: 1px;
+}
+#main-content #banner #select-trip{
+	margin-top: 10%;
 }
 #main-content #banner #select-trip .form-group{
 	padding: 0;
@@ -195,20 +210,28 @@ button.black-btn:hover{
 	padding-left: 40px;
 	border: none;
 }
+#main-content #banner #select-trip .form-control:focus{
+
+}
 #main-content #banner #select-trip button.btn-primary{
 	width: 100%;
 	border-radius: 0px;
 	font-size: 13px;
+	background-color: #0075bf;
 }
 #main-content #banner #select-trip .banner-icon{
 	color: white;
 	background-color: black;
-	padding: 11px 12px;
-	font-size: 10px;
+	padding: 9px 10px;
+	font-size: 15px;
 	position: absolute;
 }
+#main-content #banner #select-trip .square{
+	padding-left: 12px;
+	padding-right: 13px;
+}
 #main-content #banner #select-trip .banner-icon .fa-clipboard{
-	padding: 0;
+	font-size: 5px;
 }
 /*END BANNER*/
 
@@ -223,11 +246,9 @@ button.black-btn:hover{
 }
 #main-content .pros-content{
 	display: inline-flex;
-	justify-content: center;
-	align-content: center;
+	margin: auto;
 	background-color: white;
-	margin-right: 20px;
-	padding: 30px 10px;
+	padding: 30px 30px 20px 20px;
 }
 #main-content .pros-content img{
 	width: 50px;
@@ -258,6 +279,8 @@ button.black-btn:hover{
 }
 #main-content #destinations .dest-item{
 	position: relative;
+	margin: auto;
+	margin-top: 10px;
 }
 #main-content #destinations .dest-item p{
 	color: white;
@@ -278,9 +301,9 @@ button.black-btn:hover{
 }
 #main-content #destinations .travel-background{
 	position: absolute;
-	top: 72%;
+	top: 73%;
   left: 3%;
-  transform: translate(-35%, 0%);
+  transform: translate(-27%, 0%);
 	z-index: 1;
 }
 #main-content #destinations .travel-background img{
@@ -292,59 +315,69 @@ button.black-btn:hover{
 
 /*3. DISCOUNT*/
 #main-content #discount{
-	background: url('../resources/img/discount/discount-1399.jpg') no-repeat;
-	width: 100%;
-	height: 466px;
-	display: flex;
-	margin-top: 7%;
+	display: block;
+	margin-top: 6%;
 	position: relative;
 	z-index: 2;
 }
-#main-content #discount .container{
-	width: 80%;
+#main-content #discount .jumpotron{
+	padding: 0;
+	position: relative;
+}
+#main-content #discount .jumpotron .discount-content{
+	position: absolute;
+  top: 25%;
+  left: 20%;
+  transform: translate( 0%, -10%);
+  width: 60%;
 }
 #main-content #discount .discount-text{
 	text-align: center;
 	color: white;
+	line-height: 31px;
 }
 #main-content #discount .discount-text p{
-	font-size: 30px;
+	font-size: 34px;
+	font-weight: 600;
 }
 #main-content #discount .discount-text p span{
-	font-size: 24px;
+	font-size: 25px;
+	font-weight: 500;
+	letter-spacing: 1px;
 }
 #main-content #discount .time-text{
 	margin: auto;
-	width: 80%;
+	margin-bottom: -2%;
 }
 #main-content #discount .time-countdown{
 	align-items: center;
 }
-#main-content #discount .time-countdown .time-title{
+#main-content #discount .time-countdown .time-title p{
 	color: white;
+	font-size: 12px;
 	text-align: center;
+	margin-bottom: 5px;
 }
 #main-content #discount .time-countdown .circle {
-  width: 80px;
-  height: 80px;
-  line-height: 72px;
+  width: 90px;
+  height: 90px;
+  line-height: 85px;
   border-radius: 50%;
   border: 3px solid white;
-  font-size: 30px;
+  font-size: 40px;
   color: white;
   text-align: center;
   margin: auto;
 }
 #main-content #discount .join-us-btn{
-	width: 30%;
+	width: 25%;
 	margin: auto;
-	margin-top: 60px;
 }
 #main-content #discount .join-us-btn button{
 	background-color: black;
 	color: white;
 	margin: auto;
-	padding: 10px 30px;
+	padding: 10px 0px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -385,16 +418,16 @@ button.black-btn:hover{
 	padding: 0px 20px 60px 20px;
 }
 #main-content #features .tour-item .tour-booking button{
-	background-color: #0274bd;
+	background-color: #008acb;
 	color: white;
 	border: none;
 	padding: 10px 30px;
 }
 #main-content #features .tour-item .tour-booking button:hover{
-	background-color: #002e79;
+	background-color: #002d79;
 }
 #main-content #features .tour-item .tour-booking .price-text{
-	color: #096dc9;
+	color: #008acb;
 	margin-top: 2px;
 	font-size: 22px;
 	font-weight: bold;
@@ -402,13 +435,14 @@ button.black-btn:hover{
 
 /* 5. CLIENTS REVIEWS*/
 #main-content #client-reviews .carousel-item{
-	height: 450px;
+	height: 380px;
 	margin: auto;
+	padding-left: 10px;
 }
 #main-content #client-reviews .carousel-item .review-content{
 	width: 30%;
 	margin: auto;
-	margin-top: 20px;
+	margin-right: 10px;
 	background-color: white;
 	padding: 0;
 	padding-top: 40px;
@@ -418,8 +452,8 @@ button.black-btn:hover{
 	box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.46);
 }
 #main-content #client-reviews .carousel-item .review-content  img{
-	width: 80px;
-	height: 80px;
+	width: 70px;
+	height: 70px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -430,8 +464,6 @@ button.black-btn:hover{
 	margin: auto;
 	text-align: center;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	width: 20%;
 	padding-top: 20px;
 	font-size: 20px;
@@ -564,9 +596,7 @@ button.black-btn:hover{
 	background-color: #0075bf;
 }
 #main-content #special-offer .special-content .special-offer-tour .offer-buttons #book-now:hover{
-	background-color: #0f1e34;
-	border: 1px solid white;
-	padding: 9px 19px;
+	background-color: #002e79;
 }
 #main-content #special-offer .special-content .special-offer-tour .offer-buttons #read-more{
 	border: 1px solid white;
@@ -577,8 +607,8 @@ button.black-btn:hover{
 	margin-left: 15px;
 }
 #main-content #special-offer .special-content .special-offer-tour .offer-buttons #read-more:hover{
-	background-color: #0075bf;
-	border: none;
+	/*background-color: #002e79;*/
+	border: 1px solid #002e79;
 }
 #main-content #special-offer .special-content .background-layer img{
 	height: 500px;
@@ -588,11 +618,10 @@ button.black-btn:hover{
 
 /*7. LASTEST BLOGS*/
 #main-content #lastest-blogs{
-	width: 100%;
 	margin: auto;
 }
 #main-content #lastest-blogs .blog-container{	
-	margin-right: 20px;
+	margin-right: 10px;
 	margin: auto;
 	padding: 0;
 	margin-left: 20px;
@@ -606,7 +635,7 @@ button.black-btn:hover{
 }
 #main-content #lastest-blogs .blog-container .blog-content{
 	margin-top: 20px;
-	padding: 0px 20px 20px 20px;
+	padding: 0px 20px 30px 20px;
 }
 #main-content #lastest-blogs .blog-container .blog-content .blog-time{
 	opacity: 0.8;
@@ -632,31 +661,34 @@ button.black-btn:hover{
 
 /*SUBCRIBE PANEL*/
 #subscribe-panel{
-	background-color: #002854;
+	background-color: #002855;
 	color: white;
-	padding: 50px;
-	margin-top: 20px;
+	padding: 70px 0px;
+	margin-top: 80px;
 }
 #subscribe-panel .container{
 	display: block;
 }
 #subscribe-panel .subscribe-text{
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: 500;
 }
 #subscribe-panel .subscribe-content{
-
+	margin-top: 20px;
+}
+#subscribe-panel .subscribe-content p{
+	font-size: 15px;
 }
 #subscribe-panel .subscribe-content #subscribe-input{
 	display: flex;
 }
 #subscribe-panel .subscribe-content .input-field{
-	width: 80%;
+	width: 60%;
 	padding: 0;
 }
 #subscribe-panel .subscribe-content .form-control{
 	border-radius: 0px;
-	font-size: 12px;
+	font-size: 13px;
 }
 #subscribe-panel .subscribe-content .action{
 	width: 20%;
@@ -664,44 +696,42 @@ button.black-btn:hover{
 #subscribe-panel .subscribe-content .btn-primary{
 	border-radius: 0px;
 	border: none;
-	font-size: 9px;
+	font-size: 10px;
 	padding: 10px 20px;
 	background-color: black;
 }
 #subscribe-panel .subscribe-content .btn-primary:hover{
 	opacity: 0.8;
 }
-
-
 /*END SUBCRIBE PANEL*/
 
 /*FOOTER*/
-footer{
-	padding: 100px 0px 50px 0px;
-}
-footer #information {
-	padding-right: 50px;
-}
 footer #information #about-web h3 {
 	font-weight: 900;
 	padding-bottom: 20px;
 }
 footer #information #about-web p {
-	width: 300px;
-	font-size: 85%;
+	width: 70%;
 }
 footer #information #social-media{
 	padding-top: 20px;
 }
+footer #information #social-media h6{
+	font-weight: 700;
+}
 footer #information #social-media ul {
 	display: grid;
-	grid-template-columns: repeat(3, 30px);
+	grid-template-columns: repeat(3, 40px);
 	opacity: 0.8;
+}
+footer #information #social-media ul li{
+	font-size: 16px;
+}
+footer .footer-list {
+	margin-left: -10px;
 }
 footer .footer-list h6 {
 	font-weight: 700;
-}
-footer .footer-list h6 {
 	padding-top: 10px;
 }
 footer .footer-list ul {
@@ -718,7 +748,7 @@ footer .footer-list li a {
 	text-decoration: none;
 }
 footer .footer-list li a:hover {
-	color: #2596be;
+	color: #008ac7;
 }
 /*END FOOTER*/
 
@@ -740,7 +770,7 @@ footer .footer-list li a:hover {
 }
 #copyright-wrapper #payment{
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 50px);
 }
 #copyright-wrapper .payment-icon{
 	height: 30px;
@@ -760,16 +790,31 @@ footer .footer-list li a:hover {
 	}
 	/*END PRE HEADER*/
 
+	/*BANNER*/
+	#main-content #banner #select-trip{
+		width: 80%;
+		margin-top: 10%;
+	}
+	/*END BANNER*/
+
 	/*MAIN CONTENT*/
 	/*1. PROS*/
 	#main-content .pros-content{
-		width: 30%;
+		width: 32%;
 	}
 
 	/*3. DISCOUNT*/
-	#discount .discount-text{
-		margin-top: 100px;
-	}	
+	#main-content #discount .time-text{
+		width: 80%;
+	}
+	#main-content #discount .time-countdown{
+		margin-top: 25px;
+	}
+	#main-content #discount .join-us-btn{
+		margin-top: 60px;
+		padding: 0px 25px;
+	}
+
 
 	/*4. FEATURE PACKAGES*/
 	#main-content #features .tour-item{
@@ -777,24 +822,38 @@ footer .footer-list li a:hover {
 	}	
 
 	/*5. CLIENTS REVIEWS*/	
-	#main-content #client-reviews .review-content{	
-		width: 30%;
+	#main-content #client-reviews .carousel-item .review-content{
+		width: 31%;
 	}
 
 	/*6. SPECIAL OFFER*/
 
 	/*7. LASTEST BLOGS*/
 	#main-content #lastest-blogs .blog-container{	
-		width: 30%;
+		width: 31%;
 	}
 
 	/*END MAIN CONTENT*/
 
 	/*SUBSCRIBE PANEL*/
 	#subscribe-panel .subscribe-text{
-		margin-left: 100PX;
+		margin-left: 0PX;
 	}
 	/*END SUBSCRIBE PANEL*/
+
+	/*FOOTER*/
+
+	footer{
+		padding: 100px 0px 50px 0px;
+	}
+	footer #information{
+		width: 40%;
+	}
+	footer .footer-list {
+		width: 20%;
+	}
+	/*END FOOTER*/
+
 }
 
 /* Large screens */
@@ -804,42 +863,35 @@ footer .footer-list li a:hover {
 		top: 5px;
 	}
 	/*END PRE HEADER*/
+
 	/*BANNER*/
-	#main-content #banner{
-		background: url('../resources/img/banner/banner-1199.jpg') no-repeat;
-		width: 100%;
-		height: 572px;
+	#main-content #banner .jumpotron .banner-content{
+		position: absolute;
+	  top: 30%;
+	  left: 15%;
+	  transform: translate( 0%, 0%);
+	  width: 70%;
 	}
-	#main-content #banner .container{
-		position: relative;
-	 	top: 35%;
-	  left: 0%;
-	  transform: translate(0%, 0%);
-	}
-	#main-content #banner .container .banner-text{
-		padding-bottom: 65px;
-	}
-	#main-content #banner .container .banner-text h1{
-		color: white;
-		font-weight: 800;
-		font-size: 30px;
-	}
-	#main-content #banner .container .banner-text h1 span{
-		font-weight: 900;
+	#main-content #banner .container-fluid .banner-text h1{
 		font-size: 40px;
+		line-height: 40px;
 	}
-	#main-content #banner .container .banner-text p{
-		color: white;
-		font-weight: 200;
-		font-size: 22px;
+	#main-content #banner .container-fluid .banner-text h1 span{
+		font-size: 53px;
+	}
+	#main-content #banner .container-fluid .banner-text p{
+		font-size: 20px;
+	}
+	#main-content #banner #select-trip{
+		margin-top: 80px;
 	}
 	#main-content #banner #select-trip .form-group{
 		margin-bottom: 10px;
 	}
 	#main-content #banner #select-trip .form-control{
 		border-radius: 0px;
-		font-size: 13px;
-		padding-left: 40px;
+		font-size: 12px;
+		padding-left: 35px;
 		border: none;
 	}
 	#main-content #banner #select-trip{
@@ -848,33 +900,42 @@ footer .footer-list li a:hover {
 	#main-content #banner #select-trip button.btn-primary{
 		width: 100%;
 		border-radius: 0px;
-		font-size: 12px;
+		font-size: 13px;
 	}
 	#main-content #banner #select-trip .banner-icon{
+		padding: 8px 9px;
+		font-size: 14px;
+	}
+	#main-content #banner #select-trip .square{
+		padding: 8px 11px;
 
-		color: white;
-		background-color: black;
-		padding: 11px 12px;
-		font-size: 10px;
-		position: absolute;
 	}
 	/*END BANNER*/
 
 
 	/*MAIN CONTENT*/
 	/*1. PROS*/
-	#main-content .pros-content{
-		margin-right: 10px;
+	#main-content #pros-section{
+		margin-top: 20px;
+	}
+	#main-content #pros-section .pros-content{
 		width: 32%;
-		margin-top: 10px;
+		padding: 10px 10px 0px 20px;
+	}
+	#main-content .pros-content img{
+		width: 50px;
+		height: 50px;
 	}
 
 	/*2. TOP DESTINATIONS*/
+	#main-content #destinations{
+		width: 80%;
+	}
 	#main-content #destinations .travel-background{
 		position: absolute;
-		top: 80%;
-	  left: 2%;
-	  transform: translate(-35%, -5%);
+		top: 70%;
+	  left: 0%;
+	  transform: translate(-15%, -2%);
 		z-index: 1;
 	}
 	#main-content #destinations .travel-background img{
@@ -886,20 +947,45 @@ footer .footer-list li a:hover {
 
 	/*3. DISCOUNT*/
 	#main-content #discount{
-		background: url('../resources/img/discount/discount-1199.jpg') no-repeat;
-		width: 100%;
-		height: 400px;
-		margin-top: 9%;
+		margin-top: 5%;
+	}
+ 	#main-content #discount .jumpotron .discount-content{
+		position: absolute;
+	  top: 20%;
+	  height: 100%;
 	}
 	#main-content #discount .discount-text{
-		margin-top: 70px;
+		line-height: 23px;
 	}
 	#main-content #discount .discount-text p{
-		font-size: 22px;
+		font-size: 26px;
+		font-weight: 500;
 	}
 	#main-content #discount .discount-text p span{
-		font-size: 17px;
+		font-size: 19px;
 	}
+	#main-content #discount .time-text{
+		margin-bottom: 5%;
+		margin-top: 10%;
+	}
+	#main-content #discount .time-countdown .time-title p{
+		font-size: 12px;
+		margin: auto;
+		width: 100%;
+	}
+	#main-content #discount .time-countdown .circle {
+	  width: 70px;
+	  height: 70px;
+	  line-height: 70px;
+	  border: 2px solid white;
+	  font-size: 27px;
+	  margin: auto;
+	}
+	#main-content #discount .join-us-btn button{
+		font-size: 13px;
+		padding: 5px 10px;;
+	}
+
 
 	/*4. FEATURE PACKAGES*/
 	#main-content #features .tour-item{
@@ -988,28 +1074,56 @@ footer .footer-list li a:hover {
 
 	/*SUBCRIBE PANEL*/
 	#subscribe-panel .subscribe-text{
-		font-size: 22px;
+		font-size: 30px;
 		font-weight: 500;
-		padding-left: 80px;
 	}
 	#subscribe-panel .subscribe-content p{
 		font-size: 13px;
 	}
 	#subscribe-panel .subscribe-content #subscribe-input .input-field input{
-		font-size: 11px;
+		font-size: 12px;
 	}
 	#subscribe-panel .subscribe-content #subscribe-input .action button{
-		font-size: 8px;
-		padding: 10px 12px;
+		font-size: 10px;
+		padding: 10px 20px;
 	}
-	/*END SUBSCRIBE PANEL*/
-	/*END SUBSCRIBE PANEL*/
+
+	/*FOOTER*/
+	footer{
+		padding: 60px 0 40px 0;
+	}
+	footer #information {
+		width: 40%;
+	}
+	footer .footer-list {
+		width: 20%;
+	}
+
+	/*COPYRIGHT*/
+/*	#copyright-wrapper{
+		min-height: 80px;
+	  padding: 20px 0px;
+	}
+	#copyright-wrapper .copyright-text p{
+		font-size: 15px;
+		padding: 0;
+	}
+	#copyright-wrapper #payment{
+		margin-top: 4px;
+
+	}
+	#copyright-wrapper .payment-icon{
+		height: 30px;
+		width: 30px;
+		margin-left: 10px;
+	}	*/
+	/*END COPYRIGHT*/
 }
 
 /* Medium screens */
 @media (min-width: 768px) and (max-width: 991px){
 	.carousel-inner .carousel-item{
-		height: 550px;
+		height: 500px;
 		margin: auto;
 	}
 	/*PRE HEADER*/
@@ -1018,124 +1132,120 @@ footer .footer-list li a:hover {
 	}
 	/*END PRE HEADER*/
 
-		/*HEADER*/
-		#header-nav .navbar-collapse .nav-item a:hover{
-			color: white;
-			background-color: #2596be;
-		}
-		/*END HEADER*/
+	/*HEADER*/
+	#header-nav .navbar-collapse .nav-item a:hover{
+		color: white;
+		background-color: #2596be;
+	}
+	/*END HEADER*/
 
 	/*BANNER*/
-	#main-content #banner{
-		background: url('../resources/img/banner/banner-991.jpg') no-repeat;
-		width: 100%;
-		height: 473px;
+	#main-content #banner .jumpotron .banner-content{
+		position: absolute;
+	  top: 10%;
+	  left: 5%;
+	  transform: translate( 0%, 0%);
+	  width: 90%;
+	  padding: 50px;
 	}
-	#main-content #banner .container{
-		position: relative;
-	 	top: 30%;
-	  left: 0%;
-	  transform: translate(0%, 0%);
+	#main-content #banner .container-fluid .banner-text h1{
+		font-size: 27px;
+		line-height: 26px;
 	}
-	#main-content #banner .container .banner-text{
-		padding-bottom: 55px;
+	#main-content #banner .container-fluid .banner-text h1 span{
+		font-size: 36px;
 	}
-	#main-content #banner .container .banner-text h1{
-		color: white;
-		font-weight: 800;
-		font-size: 26px;
+	#main-content #banner .container-fluid .banner-text p{
+		font-size: 15px;
 	}
-	#main-content #banner .container .banner-text h1 span{
-		font-weight: 900;
-		font-size: 35px;
-	}
-	#main-content #banner .container .banner-text p{
-		color: white;
-		font-weight: 200;
-		font-size: 18px;
+	#main-content #banner #select-trip{
+		margin-top: 10%;
 	}
 	#main-content #banner #select-trip .form-group{
 		margin-bottom: 5px;
 	}
 	#main-content #banner #select-trip .form-control{
 		border-radius: 0px;
-		font-size: 10px;
-		padding-left: 40px;
+		font-size: 12px;
+		padding-left: 35px;
 		border: none;
 	}
 	#main-content #banner #select-trip{
 		margin-bottom: 10px;
 	}
 	#main-content #banner #select-trip button.btn-primary{
-		width: 100%;
-		border-radius: 0px;
-		font-size: 10px;
+		font-size: 12px;
 	}
 	#main-content #banner #select-trip .banner-icon{
-		color: white;
-		background-color: black;
 		padding: 9px 10px;
-		font-size: 10px;
-		position: absolute;
+		font-size: 13px;
+	}
+	#main-content #banner #select-trip .square{
+		padding: 9px 10px;
 	}
 	/*END BANNER*/
 
 	/*MAIN CONTENT*/
 	/*1. PROS*/
+	#main-content #pros-section{
+		width: 70%;
+		margin: auto;
+		margin-top: 40px;
+	}
 	#main-content #pros-section .pros-content{
 		margin-top: 10px;
+		padding: 20px 0 10px 40px;
+	}
+	#main-content .pros-content img{
+		width: 50px;
+		height: 50px;
 	}
 
 	/*2. TOP DESTINATIONS*/
-	#main-content #destinations .travel-background{
-		position: absolute;
-		top: 70%;
-	  left: 2%;
-	  transform: translate(-35%, 3%);
-		z-index: 1;
-	}
-	#main-content #destinations .travel-background img{
-		position: relative;
-		top: 0%;
-	  left: 0%;
-	  transform: translate(0%, 0%);
+	#main-content #destinations{
+		width: 100%;
 	}
 
 	/*3. DISCOUNT*/
 	#main-content #discount{
-		background: url('../resources/img/discount/discount-991.jpg') no-repeat;
-		width: 100%;
-		height: 330px;
-		margin-top: 6%;
+		margin-top: 5%;
+	}
+ 	#main-content #discount .jumpotron .discount-content{
+		position: absolute;
+	  top: 20%;
+	  height: 100%;
 	}
 	#main-content #discount .discount-text{
-		margin-top: 60px;
+		line-height: 22px;
 	}
 	#main-content #discount .discount-text p{
-		font-size: 20px;
+		font-size: 25px;
+		font-weight: 500;
 	}
 	#main-content #discount .discount-text p span{
-		font-size: 15px;
+		font-size: 18px;
 	}
-	#main-content #discount .time-countdown .time-title{
-		font-size: 11px;
-		margin-bottom: -10px;
+	#main-content #discount .time-text{
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+	#main-content #discount .time-countdown .time-title p{
+		font-size: 12px;
+		margin: auto;
+		width: 100%;
 	}
 	#main-content #discount .time-countdown .circle {
-	  width: 50px;
-	  height: 50px;
-	  line-height: 42px;
-	  border-radius: 50%;
-	  font-size: 16px;
+	  width: 60px;
+	  height: 60px;
+	  line-height: 60px;
+	  border: 2px solid white;
+	  font-size: 22px;
+	  margin: auto;
 	}
-	#main-content #discount .join-us-btn{
-		margin: auto;
-		margin-top: 30px;
-	}
+
 	#main-content #discount .join-us-btn button{
-		background-color: black;
-		color: white;
-		font-size: 10px;
+		font-size: 13px;
+		padding: 5px 10px;;
 	}
 
 	/* 4. FEATURE PACKAGES*/
@@ -1168,8 +1278,9 @@ footer .footer-list li a:hover {
 
 	/* 5. CLIENTS REVIEWS*/
 	#main-content #client-reviews .carousel-item {
+		/*width: 90%;*/
 		height: 350px;
-		margin-left: 20px;
+		margin-left: 10px;
 	}
 	#main-content #client-reviews .carousel-item .review-content{	
 		width: 31%;
@@ -1209,31 +1320,51 @@ footer .footer-list li a:hover {
 	#main-content #lastest-blogs .blog-container{	
 		width: 30%;
 	}
+	#main-content #lastest-blogs .blog-container .blog-content{
+		margin-top: 20px;
+		padding: 0px 10px 10px 10px;
+	}
+	#main-content #lastest-blogs .blog-container .blog-content .blog-text a{
+		text-decoration: none;
+		font-size: 15px;
+		font-weight: 800;
+	}
 
 	/*END MAIN CONTENT*/
 
 	/*SUBCRIBE PANEL*/
+	#subscribe-panel{
+		padding: 50px 0 60px 0;
+	}
+
 	#subscribe-panel .subscribe-text{
-		font-size: 20px;
+		font-size: 24px;
 		font-weight: 500;
 	}
+	#subscribe-panel .subscribe-content{
+		margin-top: 10px;
+	}
 	#subscribe-panel .subscribe-content p{
-		font-size: 12px;
+		font-size: 13px;
+	}
+	#subscribe-panel .subscribe-content #subscribe-input .input-field{
+		width: 70%;
 	}
 	#subscribe-panel .subscribe-content #subscribe-input .input-field input{
-		font-size: 11px;
+		font-size: 12px;
 	}
 	#subscribe-panel .subscribe-content #subscribe-input .action button{
-		font-size: 8px;
-		padding: 9px 10px;
+		font-size: 10px;
+		padding: 9px 20px;
 	}
 	/*END SUBSCRIBE PANEL*/
 
 	/*FOOTER*/
+	footer{
+		padding: 50px 0px 50px 0px;
+	}
 	footer #information{
 		margin: auto;
-		position: relative;
-		left: 2%;
 	}
 	footer #information #about-web h3{
 		padding: 0;
@@ -1242,9 +1373,10 @@ footer .footer-list li a:hover {
 	}
 	footer #information #about-web p{
 		margin: auto;
-		margin-top: 10px;
-		text-align: center;
 		width: 100%;
+		font-size: 13px;
+		margin-top: 8px;
+		text-align: center;
 	}
 	footer #information #social-media{
 		text-align: center;
@@ -1255,8 +1387,13 @@ footer .footer-list li a:hover {
 	footer #information #social-media ul{
 		display: inline-grid;
 	}
+	footer #information #social-media ul li{
+		font-size: 15px;
+		margin: auto;
+	}
 	footer .footer-list{
 		text-align: center;
+		margin: auto;
 	}
 	/*END FOOTER*/
 }
@@ -1281,56 +1418,74 @@ footer .footer-list li a:hover {
 		/*END HEADER*/
 
 
-	/*BANNER*/
-	#main-content #banner{
-		background: url('../resources/img/banner/banner-767.jpg') no-repeat;
-		width: 100%;
-		height: 366px;
+	 /*BANNER*/
+	#main-content #banner .jumpotron .banner-content{
+		position: absolute;
+	  top: 0%;
+	  left: 10%;
+	  transform: translate( 0%, 12%);
+	  width: 80%;
 	}
-	#main-content #banner .container{
-		width: 90%;
-		position: relative;
-	 	top: 30%;
-	  left: 0%;
-	  transform: translate(0%, 0%);
+	#main-content #banner .container-fluid .banner-text h1{
+		font-size: 23px;
+		line-height: 28px;
+		/*margin-bottom: -10px;*/
 	}
-	#main-content #banner .container .banner-text{
-		padding-bottom: 25px;
+	#main-content #banner .container-fluid .banner-text h1 span{
+		font-size: 31px;
 	}
-	#main-content #banner .container .banner-text h1{
-		color: white;
-		font-weight: 800;
-		font-size: 25px;
+	#main-content #banner .container-fluid .banner-text p{
+		font-size: 12px;
+		margin-top: 0px;
 	}
-	#main-content #banner .container .banner-text h1 span{
-		font-weight: 900;
-		font-size: 34px;
-	}
-	#main-content #banner .container .banner-text p{
-		color: white;
-		font-weight: 200;
-		font-size: 15px;
+	#main-content #banner #select-trip{
+		margin-top: 5%;
 	}
 	#main-content #banner #select-trip .form-group{
 		margin-bottom: 5px;
 	}
 	#main-content #banner #select-trip .form-control{
-		font-size: 10px;
-		padding-left: 35px;
+		font-size: 11px;
 	}
 	#main-content #banner #select-trip button.btn-primary{
-		font-size: 12px;
+		width: 100%;
+		border-radius: 0px;
+		font-size: 11px;
 	}
 	#main-content #banner #select-trip .banner-icon{
-		padding: 9px 10px;
-		font-size: 10px;
+		color: white;
+		background-color: black;
+		padding: 9px 9px;
+		font-size: 11px;
+		position: absolute;
+	}
+	#main-content #banner #select-trip .square{
+		padding-left: 11px;
+		padding-right: 11px;
 	}
 	/*END BANNER*/
 
 	/*MAIN CONTENT*/
 	/*1. PROS*/
+	#main-content #pros-section{
+		margin-top: 20px;
+	}
 	#main-content #pros-section .pros-content{
+		width: 100%;
+		padding: 0 0 0 20px;
 		margin-top: 10px;
+	}
+	#main-content .pros-content img{
+		width: 50px;
+		height: 50px;
+		margin: auto;
+	}
+	#main-content .pros-content .pros-text{
+		padding-left: 20px;
+		margin-top: 15px;
+	}
+	#main-content .pros-content .pros-text h6{
+		font-weight: 800;
 	}
 	/*END 1. PROS*/  
 
@@ -1339,53 +1494,47 @@ footer .footer-list li a:hover {
 		width: 100%;
 		margin: auto;
 	}
-	#main-content #destinations .dest-item p{
-		color: white;
-		font-size: 18px;
-		font-weight: 700;
-		text-align: center;
-	  	position: absolute;
-	 	top: 50%;
-	  	left: 50%;
-	  	transform: translate(-50%, -50%);
-	}
 	/*END 2. TOP DESTINATIONS*/ 
 
 	/*3. DISCOUNT*/
-	#main-content #discount{
-		background: url('../resources/img/discount/discount-767.jpg') no-repeat;
-		width: 100%;
-		height: 255px;
-		position: relative;
-		margin-top: 50px;
+ 	#main-content #discount .jumpotron .discount-content{
+		position: absolute;
+	  top: 10%;
+	  height: 100%;
+		padding-top: 20px;
 	}
 	#main-content #discount .discount-text{
-		margin-top: 30px;
+		line-height: 20px;
 	}
 	#main-content #discount .discount-text p{
-		font-size: 18px;
+		font-size: 20px;
+		font-weight: 500;
 	}
 	#main-content #discount .discount-text p span{
-		font-size: 13px;
+		font-size: 14px;
 	}
-	#main-content #discount .time-countdown .time-title{
-		font-size: 11px;
-		color: white;
-		margin-bottom: -10px;
+	#main-content #discount .time-text{
+		margin-bottom: 0;
+	}
+	#main-content #discount .time-countdown .time-title p{
+		font-size: 10px;
+		margin: auto;
+		width: 100%;
 	}
 	#main-content #discount .time-countdown .circle {
 	  width: 50px;
 	  height: 50px;
-	  line-height: 42px;  
-	  font-size: 14px;
+	  line-height: 46px;
+	  border: 2px solid white;
+	  font-size: 18px;
+	  margin: auto;
 	}
 	#main-content #discount .join-us-btn{
-		margin-top: 20px;
+		width: 30%;
 	}
 	#main-content #discount .join-us-btn button{
-		background-color: black;
-		color: white;
 		font-size: 10px;
+		padding: 5px 10px;;
 	}
 
 	/* 4. FEATURE PACKAGES*/
@@ -1472,12 +1621,40 @@ footer .footer-list li a:hover {
 
 	/*6. SPECIAL OFFER*/
 	#main-content #special-offer .text p{
-		color: white;
 		width: 50%;
-		font-size: 16px;
+		font-size: 15px;
 		position: relative;
-		left: 30%;
+		left: 35%;
 		top: 10%;
+	}
+	#main-content #special-offer .text p span.line-two{
+		font-size: 28px;
+		line-height: 30px;
+	}
+	#main-content #special-offer .text p span.line-three{
+		font-size: 30px;
+		line-height: 40px;
+	}
+	#main-content #special-offer .special-content .special-text{
+		position: absolute;
+		left: 50%;
+	  color: white;
+	  width: 100%;
+	  padding: 0px 30px;
+	}
+	#main-content #special-offer .special-content .special-title{
+		margin-bottom: -10px;
+		font-size: 15px;
+	}
+	#main-content #special-offer .special-content .special-offer-tour .tour-price .tour-rating{
+		margin-top: 10px;
+	}
+	#main-content #special-offer .special-content .special-offer-tour .tour-price .tour-rating span{
+		margin-left: 10px;	
+		font-size: 10px;
+	}
+	#main-content #special-offer .special-content .special-offer-tour .offer-buttons{
+		margin-top: 0;
 	}
 
 	/*7. LASTEST BLOGS*/
@@ -1522,26 +1699,37 @@ footer .footer-list li a:hover {
 	/*END MAIN CONTENT*/
 
 	/*SUBCRIBE PANEL*/
+	#subscribe-panel{
+		padding: 40px 0 40px 0;
+	}
 	#subscribe-panel .subscribe-text{
+		width: 80%;
+		margin: auto;
 		font-size: 20px;
 		font-weight: 500;
+	}
+	#subscribe-panel .subscribe-content{
+		width: 80%;
+		margin: auto;
 	}
 	#subscribe-panel .subscribe-content p{
 		font-size: 12px;
 	}
+	#subscribe-panel .subscribe-content #subscribe-input .input-field{
+		width: 70%;
+	}
 	#subscribe-panel .subscribe-content #subscribe-input .input-field input{
-		font-size: 11px;
+		font-size: 12px;
 	}
 	#subscribe-panel .subscribe-content #subscribe-input .action button{
-		font-size: 8px;
-		padding: 9px 10px;
+		font-size: 10px;
+		padding: 9px 20px;
 	}
 	/*END SUBSCRIBE PANEL*/
 
 	/*FOOTER*/
-	footer #information{
-		position: relative;
-		left: 3%;
+	footer{
+		padding:40px 0px 20px 0px;
 	}
 	footer #information #about-web h3{
 		padding: 0;
@@ -1550,6 +1738,8 @@ footer .footer-list li a:hover {
 	}
 	footer #information #about-web p{
 		margin: auto;
+		width: 100%;
+		font-size: 13px;
 		margin-top: 8px;
 		text-align: center;
 	}
@@ -1562,8 +1752,12 @@ footer .footer-list li a:hover {
 	footer #information #social-media ul{
 		display: inline-grid;
 	}
+	footer #information #social-media ul li{
+		font-size: 15px;
+	}
 	footer .footer-list{
 		text-align: center;
+		margin: auto;
 	}
 	/*END FOOTER*/
 
@@ -1573,10 +1767,10 @@ footer .footer-list li a:hover {
 	  padding: 10px 0px;
 	}
 	#copyright-wrapper .copyright-text p{
-		font-size: 11px;
+		font-size: 12px;
 	}
 	#copyright-wrapper #payment{
-		margin-top: 5px;
+		margin-top: 4px;
 	}
 	#copyright-wrapper .payment-icon{
 		height: 22px;
@@ -1588,6 +1782,11 @@ footer .footer-list li a:hover {
 
 /* Extra small screens */
 @media (max-width: 576px){
+	.sect-title{
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 0px;
+	}
 	.carousel-inner .carousel-item{
 		height: 550px;
 		margin: auto;
@@ -1606,46 +1805,33 @@ footer .footer-list li a:hover {
 	/*END HEADER*/
 
 	/*BANNER*/
-	#main-content #banner{
-		background: url('../resources/img/banner/banner-576.jpg') no-repeat;
-		width: 100%;
-		height: 274px;
+	#main-content #banner .jumpotron .banner-content{
+		position: absolute;
+	  top: 3%;
+	  left: 10%;
+	  transform: translate( 0%, 0%);
+	  width: 80%;
 	}
-	#main-content #banner .container{
-		width: 90%;
-		position: relative;
-	 	top: 15%;
-	  left: 1%;
-	  transform: translate(0%, 0%);
+	#main-content #banner .container-fluid .banner-text h1{
+		font-size: 20px;
+		line-height: 20px;
+		margin-bottom: -10px;
 	}
-	#main-content #banner .container .banner-text{
-		padding-bottom: 5px;
+	#main-content #banner .container-fluid .banner-text h1 span{
+		font-size: 27px;
 	}
-	#main-content #banner .container .banner-text h1{
-		color: white;
-		font-weight: 800;
-		font-size: 18px;
-	}
-	#main-content #banner .container .banner-text h1 span{
-		font-weight: 900;
-		font-size: 24px;
-	}
-	#main-content #banner .container .banner-text p{
-		color: white;
-		font-weight: 200;
-		font-size: 15px;
-	}
-	#main-content #banner #select-trip .form-group{
-		margin-bottom: 5px;
-	}
-	#main-content #banner #select-trip .form-control{
-		border-radius: 0px;
-		font-size: 10px;
-		padding-left: 30px;
-		border: none;
+	#main-content #banner .container-fluid .banner-text p{
+		font-size: 12px;
+		margin-top: 10px;
 	}
 	#main-content #banner #select-trip{
-		margin-bottom: 10px;
+		margin-top: 0%;
+	}
+	#main-content #banner #select-trip .form-group{
+		margin-bottom: 3px;
+	}
+	#main-content #banner #select-trip .form-control{
+		font-size: 10px;
 	}
 	#main-content #banner #select-trip button.btn-primary{
 		width: 100%;
@@ -1655,10 +1841,16 @@ footer .footer-list li a:hover {
 	#main-content #banner #select-trip .banner-icon{
 		color: white;
 		background-color: black;
-		padding: 9px 10px;
-		font-size: 10px;
+		padding: 8px 9px;
+		font-size: 11px;
 		position: absolute;
 	}
+	#main-content #banner #select-trip .square{
+		padding-left: 11px;
+		padding-right: 11px;
+	}
+
+
 	/*END BANNER*/
 
 	/*MAIN CONTENT*/
@@ -1668,88 +1860,67 @@ footer .footer-list li a:hover {
 	}
 	#main-content #pros-section .pros-content{
 		width: 90%;
-		padding: 10px;
-		margin: auto;
+		padding: 0 0 0 20px;
 		margin-top: 10px;
 	}
 	#main-content .pros-content img{
-		width: 30px;
-		height: 30px;
+		width: 50px;
+		height: 50px;
+		margin: auto;
 	}
 	#main-content .pros-content .pros-text{
-		padding-left: 10px;
+		padding-left: 20px;
+		margin-top: 15px;
 	}
 	#main-content .pros-content .pros-text h6{
 		font-weight: 800;
 	}
-	#main-content .pros-content .pros-text p{
-		opacity: 0.8;
-		font-size: 11px;
-	}
+
 
 	/*2. TOP DESTINATIONS*/
 	#main-content #destinations{
-		width: 100%;
+		width: 80%;
 		margin: auto;
-	}
-	#main-content #destinations .dest-item p{
-		color: white;
-		font-size: 15px;
-		font-weight: 700;
-		text-align: center;
-	  position: absolute;
-	 	top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
 	}
 
  	/*3. DISCOUNT*/
-	#main-content #discount{
-		background: url('../resources/img/discount/discount-576.jpg') no-repeat;
-		width: 100%;
-		height: 192px;
+ 	#main-content #discount .jumpotron .discount-content{
+		position: absolute;
+	  top: 15%;
 	}
-	#main-content #discount .container{
-		width: 80%;
-	}	
 	#main-content #discount .discount-text{
-		text-align: center;
-		color: white;
-		padding: 0;
-		margin-top: 10px;
+		line-height: 17px;
+		margin-bottom: -5px;
 	}
 	#main-content #discount .discount-text p{
-		font-size: 15px;
-
+		font-size: 18px;
+		font-weight: 500;
 	}
 	#main-content #discount .discount-text p span{
-		font-size: 11px;
+		font-size: 12px;
 	}
-	#main-content #discount .time-countdown .time-title{
-		font-size: 10px;
-		color: white;
-		margin-bottom: -10px;
+	#main-content #discount .time-text{
+		margin-bottom: -2%;
+	}
+	#main-content #discount .time-countdown .time-title p{
+		font-size: 9px;
+		margin: auto;
+		width: 100%;
 	}
 	#main-content #discount .time-countdown .circle {
 	  width: 40px;
 	  height: 40px;
 	  line-height: 38px;
-	  border-radius: 50%;
-	  border: 3px solid white;
+	  border: 2px solid white;
 	  font-size: 15px;
-	  color: white;
-	  text-align: center;
 	  margin: auto;
 	}
 	#main-content #discount .join-us-btn{
-		margin: auto;
-		margin-top: 10px;
+		width: 30%;
 	}
 	#main-content #discount .join-us-btn button{
-		background-color: black;
-		color: white;
 		font-size: 10px;
-		padding: 5px 0px;
+		padding: 5px 10px;;
 	}
 
 	/* 4. FEATURE PACKAGES*/
@@ -1765,8 +1936,7 @@ footer .footer-list li a:hover {
 	#main-content #features .tour-item .tour-text{
 		width: 60%;
 		float: right;
-		padding: 0;
-		padding: 10px 5px 0px 5px;
+		padding: 10px 5px 10px 5px;
 	}
 	#main-content #features .tour-item .tour-text h6{
 		font-weight: 700;
@@ -1779,7 +1949,6 @@ footer .footer-list li a:hover {
 		padding: 0;
 		padding-left: 5px;
 		float: left;
-		margin-bottom: -15px;
 	}
 	#main-content #features .tour-item .tour-booking button{
 		background-color: #0274bd;
@@ -1837,16 +2006,51 @@ footer .footer-list li a:hover {
 	}
 
 	/*6. SPECIAL OFFER*/
+	#main-content #special-offer{
+		margin-top: 40px;
+	}
 	#main-content #special-offer .text p{
-		color: white;
 		width: 50%;
-		font-size: 16px;
+		font-size: 15px;
 		position: relative;
-		left: 30%;
+		left: 35%;
 		top: 10%;
+	}
+	#main-content #special-offer .text p span.line-two{
+		font-size: 28px;
+		line-height: 30px;
+	}
+	#main-content #special-offer .text p span.line-three{
+		font-size: 30px;
+		line-height: 40px;
+	}
+	#main-content #special-offer .special-content .special-text{
+		position: absolute;
+		left: 50%;
+	  color: white;
+	  width: 100%;
+	  padding: 0px 30px;
+	}
+	#main-content #special-offer .special-content .special-title{
+		margin-bottom: -10px;
+		font-size: 15px;
+	}
+	#main-content #special-offer .special-content .special-offer-tour .tour-price .tour-rating{
+		margin-top: 10px;
+	}
+	#main-content #special-offer .special-content .special-offer-tour .tour-price .tour-rating span{
+		margin-left: 10px;	
+		font-size: 10px;
+	}
+	#main-content #special-offer .special-content .special-offer-tour .offer-buttons{
+		margin-top: 0;
 	}
 
 	/*7. LASTEST BLOGS*/
+	#main-content #lastest-blogs .carousel-inner .carousel-item{
+		height: 480px;
+		margin: auto;
+	}
 	#main-content #lastest-blogs .blog-container{	
 		width: 90%;
 		margin: auto;
@@ -1861,8 +2065,8 @@ footer .footer-list li a:hover {
 		width: 60%;
 		float: right;
 		margin: 0;
-		padding: 0px 0px 0px 10px;
-		margin-top: 10px;
+		padding: 5px 5px 0px 5px;
+		margin-top: 0px;
 	}
 	#main-content #lastest-blogs .blog-container .blog-content .blog-time{
 		opacity: 0.8;
@@ -1873,6 +2077,7 @@ footer .footer-list li a:hover {
 	}
 	#main-content #lastest-blogs .blog-container .blog-content .blog-text .blog-title{
 		font-weight: 600;
+		font-size: 12px;
 	}
 	#main-content #lastest-blogs .blog-container .blog-content .blog-text p{
 		opacity: 0.8;
@@ -1888,23 +2093,39 @@ footer .footer-list li a:hover {
 	/*END MAIN CONTENT*/
 
 	/*SUBCRIBE PANEL*/
+	#subscribe-panel{
+		padding: 40px 0 50px 0;
+	}
 	#subscribe-panel .subscribe-text{
-		font-size: 18px;
+		font-size: 19px;
+		width: 80%;
 		font-weight: 500;
+		margin: auto;
+	}
+	#subscribe-panel .subscribe-content{
+		width: 80%;
+		
+		margin: auto;
 	}
 	#subscribe-panel .subscribe-content p{
-		font-size: 11px;
+		font-size: 12px;
+	}
+	#subscribe-panel .subscribe-content #subscribe-input .input-field{
+		width: 70%;
 	}
 	#subscribe-panel .subscribe-content #subscribe-input .input-field input{
-		font-size: 10px;
+		font-size: 11px;
 	}
 	#subscribe-panel .subscribe-content #subscribe-input .action button{
-		font-size: 8px;
-		padding: 9px 10px;
+		font-size: 9px;
+		padding: 9px 20px;
 	}
 	/*END SUBSCRIBE PANEL*/
 
 	/*FOOTER*/
+	footer{
+		padding: 30px 0 20px 0;
+	}
 	footer #information #about-web h3{
 		width: 90vw;
 		padding: 0;
@@ -1934,14 +2155,15 @@ footer .footer-list li a:hover {
 	}
 	#copyright-wrapper .copyright-text p{
 		font-size: 10px;
+		padding: 0;
 	}
 	#copyright-wrapper #payment{
 		margin-top: 4px;
+		grid-template-columns: repeat(3, 30px);
 	}
 	#copyright-wrapper .payment-icon{
 		height: 20px;
 		width: 20px;
-		margin-left: 10px;
 	}	
 	/*END COPYRIGHT*/
 }

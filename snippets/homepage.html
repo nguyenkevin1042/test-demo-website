@@ -1,50 +1,56 @@
 <!--BANNER-->
       <div id="banner">
-        <div class="container">  
-          <div class="banner-text">
-              <h1 class="inter-font"> TRAVELLER <br><span>FOR LIFE.</span> </h1>
-              <p> Live your best moments</p>
-          </div>
+        <div class="container-fluid"> 
+          <div class="row">
+            <div class="jumpotron">
+              <img src="resources/img/banner/banner-origin.jpg" alt="Banner" class="img-fluid">
+              <div class="banner-content">
+                <div class="banner-text overlay">
+                  <h1 class="inter-font"> TRAVELLER <br><span>FOR LIFE.</span> </h1>
+                  <p> Live your best moments</p>
+                </div>
+                <div id="select-trip" >
+                <form>
+                      <div class="row">
+                        <div class="form-group col-lg-6 col-md-4 col-6">
+                          <i class="fa fa-map-marker banner-icon square" aria-hidden="true"></i>
+                          <input type="text" class="form-control" id="location1-input" aria-describedby="location1-input" placeholder="Where are you going?">
+                        </div>
+                        
+                        <div class="form-group col-lg-3 col-md-4 col-6">
+                          <i class="fa fa-map-marker banner-icon square" aria-hidden="true"></i>
+                          <input type="text" class="form-control" id="location2-input" aria-describedby="location2-input" placeholder="Location">
+                        </div>
 
-          <div id="select-trip" >
-              <form>
-                    <div class="row">
-                      <div class="form-group col-lg-6 col-md-4 col-4">
-                        <i class="fa fa-map-marker banner-icon" aria-hidden="true"></i>
-                        <input type="text" class="form-control" id="location1-input" aria-describedby="location1-input" placeholder="Where are you going?">
-                      </div>
+                        <div class="form-group col-lg-3 col-md-4 col-6">
+                          <i class="fa fa-file-text-o banner-icon" aria-hidden="true"></i></i>
+                          <input type="text" class="form-control" id="tour-type-input" aria-describedby="tour-type-input" placeholder="Tour type">
+                        </div>
                       
-                      <div class="form-group col-lg-3 col-md-4 col-4">
-                        <i class="fa fa-map-marker banner-icon" aria-hidden="true"></i>
-                        <input type="text" class="form-control" id="location2-input" aria-describedby="location2-input" placeholder="Location">
-                      </div>
+                        <div class="form-group col-lg-3 col-md-4 col-6">
+                          <i class="fa fa-usd banner-icon square" aria-hidden="true"></i>
+                          <input type="text" class="form-control" id="min-price-input" aria-describedby="min-price-input" placeholder="Min price">
+                        </div>
 
-                      <div class="form-group col-lg-3 col-md-4 col-4">
-                        <i class="fa fa-clipboard banner-icon"></i>
-                        <input type="text" class="form-control" id="tour-type-input" aria-describedby="tour-type-input" placeholder="Tour type">
-                      </div>
-                    
-                      <div class="form-group col-lg-3 col-md-4 col-4">
-                        <i class="fa fa-usd banner-icon" aria-hidden="true"></i>
-                        <input type="text" class="form-control" id="min-price-input" aria-describedby="min-price-input" placeholder="Min price">
-                      </div>
+                        <div class="form-group col-lg-3 col-md-4 col-6">
+                          <i class="fa fa-usd banner-icon square" aria-hidden="true"></i>
+                          <input type="text" class="form-control" id="max-price-input" aria-describedby="max-price-input" placeholder="Max price">
+                        </div>
 
-                      <div class="form-group col-lg-3 col-md-4 col-4">
-                        <i class="fa fa-usd banner-icon" aria-hidden="true"></i>
-                        <input type="text" class="form-control" id="max-price-input" aria-describedby="max-price-input" placeholder="Max price">
-                      </div>
+                        <div class="form-group col-lg-3 col-md-4 col-6">
+                          <i class="fa fa-globe banner-icon" aria-hidden="true"></i>
+                          <input type="text" class="form-control" id="language-input" aria-describedby="language-input" placeholder="Language">
+                        </div>
 
-                      <div class="form-group col-lg-3 col-md-4 col-4">
-                        <i class="fa fa-globe banner-icon" aria-hidden="true"></i>
-                        <input type="text" class="form-control" id="language-input" aria-describedby="language-input" placeholder="Language">
-                      </div>
-
-                      <div class="form-group col-lg-3 col-md-12 col-12">
-                       <button type="submit" class="btn btn-primary">Search</button>
-                      </div>
-                    </div> <!-- End .row -->
-              </form> 
-          </div><!-- End #select-trip -->  
+                        <div class="form-group col-lg-3 col-md-12 col-12">
+                         <button type="submit" class="btn btn-primary">Search</button>
+                        </div>
+                      </div> <!-- End .row -->
+                    </form> 
+                </div><!-- End #select-trip --> 
+              </div>    
+            </div>
+          </div> 
         </div> <!-- End .container -->
       </div> <!-- End #banner -->
       <!--END BANNER-->
@@ -53,7 +59,7 @@
       <div id="pros-section">
         <div class="container">
           <div class="row">
-            <div class="pros-content col-lg-4 col-md-12">
+            <div class="pros-content col-lg-4 col-md-12 col-12">
               <img src="resources/img/best-dest.jpg" alt="Best Destination">
               <div class="pros-text">
                 <h6 class="inter-font">Best Destinations</h6>
@@ -61,7 +67,7 @@
               </div>
             </div>
 
-            <div class="pros-content col-lg-4 col-md-12">
+            <div class="pros-content col-lg-4 col-md-12 col-12">
                   <img src="resources/img/best-price.jpg" alt="Best Price">
                   <div class="pros-text">
                     <h6 class="inter-font">Best Price Guanranteed</h6>
@@ -69,7 +75,7 @@
                   </div>
                 </div> 
 
-                <div class="pros-content col-lg-4 col-md-12">
+                <div class="pros-content col-lg-4 col-md-12 col-12">
                   <img src="resources/img/instant-booking.jpg" alt="Instant Booking">
                   <div class="pros-text">
                     <h6 class="inter-font">Instant Booking</h6>
@@ -86,30 +92,30 @@
           <div class="container">
                 <div class="row">
                   <section class="sect-title">
-                    <h3 class="inter-font">Top Destinations</h3>
+                    <h2 class="inter-font">Top Destinations</h2>
                     <p>Find out what is the best destinations in the World</p>
                   </section>
                 </div>
 
                 <div class="row overlay">
-                  <div class="dest-item col-sm-4 col-4"> 
+                  <div class="dest-item col-md-4 col-sm-9 col-8"> 
                     <img class="img-fluid" src="resources/img/destinations/bhutan.jpg" alt="Bhutan">
                     <p class="inter-font">Bhutan</p>
                   </div> 
 
-                  <div class="dest-item col-sm-4 col-4"> 
+                  <div class="dest-item col-md-4 col-sm-9 col-8"> 
                     <img class="img-fluid" src="resources/img/destinations/japan.jpg" alt="Japan">
                     <p class="inter-font">Japan</p>
                   </div> 
 
-                  <div class="dest-item col-sm-4 col-4"> 
+                  <div class="dest-item col-md-4 col-sm-9 col-8"> 
                     <img class="img-fluid" src="resources/img/destinations/nepal.jpg" alt="Nepal">
                     <p class="inter-font">Nepal</p>
                   </div> 
                 </div> <!-- End .row -->
 
 
-                <div class="jumpotron travel-background d-none d-sm-block d-sm-none d-md-block">
+                <div class="jumpotron travel-background d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
                   <img src="resources/img/travel-text-bg.jpg" alt="travel text background" class="img-fluid">
                 </div>
           </div> <!-- End .container -->
@@ -118,14 +124,18 @@
 
       <!-- 3. DISCOUNT -->
       <div id="discount">
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
-                <div class="discount-text"> 
-                  <p>Get upto 50% discount<br>
-                   <span>by joining us within 11 march</span></p>
-                </div> 
+              <div class="jumpotron">
+                 <img src="resources/img/discount/discount.jpg" alt="Discount" class="img-fluid">
 
-                <div class="time-text row">
+                 <div class="discount-content">
+                  <div class="discount-text"> 
+                    <p>Get upto 50% discount<br>
+                     <span>by joining us within 11 march</span></p>
+                  </div> 
+
+                  <div class="time-text row">
                         <div class="time-countdown col-md-3 col-3">
                           <div class="time-title">
                             <p>Days</p>
@@ -158,22 +168,28 @@
                             <p id="seconds-countdown"></p>
                           </div>
                         </div>
-                </div> <!-- End .time-text -->
+                  </div> --> <!-- End .time-text -->
 
-                <div class="join-us-btn row">
-                  <button class="black-btn">Join Us</button>
-                </div>            
+                  <div class="join-us-btn row">
+                    <button class="black-btn">Join Us</button>
+                  </div>
+
+
+                 </div> <!-- End .discount-content -->
+
+              </div>
             </div> <!-- End .row -->
           </div> <!-- End .container -->
       </div> <!-- End #discount -->
-      <!-- END 3. DISCOUNT -->
+      <!-- END 3. DISCOUNT -->        
+            
 
       <!-- 4. FEATURES-->
       <div id="features">
         <div class="container">
                 <div class="row">
                   <section class="sect-title">
-                    <h3 class="inter-font">Feature Packages</h3>
+                    <h2 class="inter-font">Feature Packages</h2>
                     <p>We will help you find the trip that's perfect for you!</p>
                   </section>
                 </div> 
@@ -191,7 +207,7 @@
               <div class="container">
                 <div class="row">
                     <section class="sect-title">
-                      <h3 class="inter-font">Clients Reviews</h3>
+                      <h2 class="inter-font">Clients Reviews</h2>
                       <p>We have many happy customers who booked holidays with us</p>
                     </section>
                 </div>
@@ -204,7 +220,7 @@
                       <button type="button" data-bs-target="#carouselIndicatorsReviews" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div> <!-- End .carousel-indicators -->
 
-                    <div id="reviews" class="carousel-inner">
+                    <div id="reviews" class="carousel-inner" data-bs-touch="true" data-bs-interval="false">
                       
                       
                     </div> <!-- End .carousel-inner -->           
@@ -218,13 +234,13 @@
       <div id="special-offer">
         <div class="container-fluid">
           <div class="row">
-                <div class="text col-md-4 col-12">
+                <div class="text col-md-5 col-12">
                   <p>Have Your<br>
                     <span class="line-two inter-font">Lifetime</span><br>
                     <span class="line-three inter-font">Experience</span></p>
                 </div>
 
-                <div class="special-content col-md-8 col-12">
+                <div class="special-content col-md-7 col-12">
                   <div class="layer1"></div>
                   <div class="special-text layer2">
                       <div class="special-title">
@@ -245,11 +261,11 @@
                         </div>
                         <p class="tour-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                         <div class="tour-price row">
-                          <p class="discount-price col-md-5">
+                          <p class="discount-price col-md-5 col-5">
                             $900
                             <span class="original-price">$1500</span>
                           </p>
-                          <p class="tour-rating col-md-7">
+                          <p class="tour-rating col-md-7 col-7">
                             <i class="fa fa-star fill-star" aria-hidden="true"></i>
                             <i class="fa fa-star fill-star" aria-hidden="true"></i>
                             <i class="fa fa-star fill-star" aria-hidden="true"></i>
@@ -280,7 +296,7 @@
         <div class="container">
           <div class="row">
             <section class="sect-title">
-              <h3 class="inter-font">Lastest Blogs</h3>
+              <h2 class="inter-font">Lastest Blogs</h2>
               <p>Travel News from all over the world for comfortable travel</p>
             </section>
           </div>
@@ -293,7 +309,7 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div> <!-- End .carousel-indicators -->
 
-            <div id="blogs" class="carousel-inner">
+            <div id="blogs" class="carousel-inner" data-bs-touch="true" data-bs-interval="false">
               
             </div> <!-- End .carousel-inner -->             
            <!-- End #carouselExampleIndicators -->

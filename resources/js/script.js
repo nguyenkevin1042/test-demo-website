@@ -30,6 +30,14 @@ function countdownTimer(expiredDate){
 	},1000);
 }
 
+// CAROUSEL SWIPE
+ function carouselSwipeType(selector){
+ 	var myCarousel = document.querySelector(selector);
+	var carousel = new bootstrap.Carousel(myCarousel,{
+		interval:false,
+		touch:true
+	})
+ }
 
 
 $(function(){
@@ -132,31 +140,45 @@ $(function(){
 			reviewItemsHtml,
 			function (reviewItemsHtml) {
  				var finalHtml ="";
-
- 				for(var i=0;i<3;i++){
- 					finalHtml += "<div class='carousel-item";
- 					if (i==0) {
- 						finalHtml+=" active'>";
+				var numberOfCarousel =3;
+ 				var limit=3;
+ 				var endCarousel=numberOfCarousel*limit;
+ 				
+ 				for(var i=0;i<reviewsJson.length;i+=limit){
+ 					if (i == endCarousel){
+ 						break;
  					} else{
- 						finalHtml+=" '>";
- 					}
 
- 					finalHtml += "<div class='row w-100'>";
+	 					finalHtml += "<div class='carousel-item";
+	 					if (i==0) {
+	 						finalHtml+=" active'>";
+	 					} else{
+	 						finalHtml+=" '>";
+	 					}
 
- 					
 
- 					for( var j=0;j<reviewsJson.length;j++){
- 						var html = reviewItemsHtml;
- 						html = insertProperty(html, "client_name",reviewsJson[j].client_name);
-			    		html = insertProperty(html, "city",reviewsJson[j].client_address.city);
-			    		html = insertProperty(html, "country",reviewsJson[j].client_address.country);
-			    		html = insertProperty(html, "review",reviewsJson[j].review);
-			    		html = insertProperty(html, "profile_picture",reviewsJson[j].profile_picture);
- 						finalHtml += html;
- 					}
+	 					finalHtml += "<div class='row w-100'>";
 
- 					finalHtml += "</div>";/*End .row*/
- 					finalHtml += "</div>"; /*End .carousel-item*/
+	 					var currentLimit = i+limit;
+	 					var end =currentLimit;
+	 					
+	 					if(currentLimit > reviewsJson.length){
+	 						end = reviewsJson.length;
+	 					} 
+
+	 					for( var j=i;j<end;j++){
+	 						var html = reviewItemsHtml;
+	 						html = insertProperty(html, "client_name",reviewsJson[j].client_name);
+				    		html = insertProperty(html, "city",reviewsJson[j].client_address.city);
+				    		html = insertProperty(html, "country",reviewsJson[j].client_address.country);
+				    		html = insertProperty(html, "review",reviewsJson[j].review);
+				    		html = insertProperty(html, "profile_picture",reviewsJson[j].profile_picture);
+	 						finalHtml += html;
+	 					}
+
+	 					finalHtml += "</div>";/*End .row*/
+	 					finalHtml += "</div>"; /*End .carousel-item*/
+	 				}
  				}
 
 			    insertHtml("#reviews", finalHtml);
@@ -169,32 +191,46 @@ $(function(){
 		$ajaxUtils.sendGetRequest(
 			blogItemsHtml,
 			function (blogItemsHtml) {
- 				var finalHtml ="";
+				var finalHtml ="";
+				var numberOfCarousel =3;
+ 				var limit=3;
+ 				var endCarousel=numberOfCarousel*limit;
+ 				
+ 				for(var i=0;i<blogsJson.length;i+=limit){
+ 					if (i == endCarousel){
+ 						break;
+ 					} else {
+ 						finalHtml += "<div class='carousel-item";
+	 					if (i==0) {
+	 						finalHtml+=" active'>";
+	 					} else{
+	 						finalHtml+=" '>";
+	 					}
 
- 				for(var i=0;i<3;i++){
- 					finalHtml += "<div class='carousel-item";
- 					if (i==0) {
- 						finalHtml+=" active'>";
- 					} else{
- 						finalHtml+=" '>";
- 					}
+	 					finalHtml += "<div class='row w-100'>";
 
- 					finalHtml += "<div class='row w-100'>";
+	 					var currentLimit = i+limit;
+	 					var end =currentLimit;
+	 					
+	 					if(currentLimit > blogsJson.length){
+	 						end = blogsJson.length;
+	 					} 
 
- 					for( var j=0;j<blogsJson.length;j++){
- 						var html = blogItemsHtml;
- 						html = insertProperty(html, "blog_title",blogsJson[j].blog_title);
-			    		html = insertProperty(html, "blog_time",blogsJson[j].blog_time);
-			    		html = insertProperty(html, "blog_text",blogsJson[j].blog_text);
-			    		html = insertProperty(html, "blog_img",blogsJson[j].blog_img);
-			    		
- 						finalHtml += html;
- 					}
+	 					for( var j=i;j<end;j++){
+	 						var html = blogItemsHtml;
+	 						html = insertProperty(html, "blog_title",blogsJson[j].blog_title);
+				    		html = insertProperty(html, "blog_time",blogsJson[j].blog_time);
+				    		html = insertProperty(html, "blog_text",blogsJson[j].blog_text);
+				    		html = insertProperty(html, "blog_img",blogsJson[j].blog_img);
+	 						finalHtml += html;
+	 					}
 
- 					finalHtml += "</div>";/*End .row*/
- 					finalHtml += "</div>"; /*End .carousel-item*/
- 				}
+	 					finalHtml += "</div>";/*End .row*/
+	 					finalHtml += "</div>"; /*End .carousel-item*/
+	 				}
+	 			}
 
+ 					
 			    insertHtml("#blogs", finalHtml);
 			},
 		false);
@@ -203,7 +239,7 @@ $(function(){
 
 
 
-
+	// carouselSwipeType("#carouselIndicatorsReviews");
 	countdownTimer("Mar 11, 2023");
 
 	
