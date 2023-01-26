@@ -2159,12 +2159,10 @@ footer .footer-list li a:hover {
 	}
 	#copyright-wrapper .copyright-text p{
 		font-size: 9px;
-		 border: 1px solid red;
 	}
 	#copyright-wrapper #payment{
 		margin-top: 4px;
 		grid-template-columns: repeat(3, 30px);
-		 border: 1px solid red;
 	}
 	#copyright-wrapper .payment-icon{
 		height: 18px;
