@@ -2125,19 +2125,21 @@ footer .footer-list li a:hover {
 	/*FOOTER*/
 	footer{
 		padding: 30px 0 20px 0;
+		display: flex;
+	  align-items: center;
+	  justify-content: center;
 	}
 	footer #information #about-web h3{
-		width: 90vw;
 		padding: 0;
+		width: 100%;
 		text-align: center;
 	}
 	footer #information #about-web p{
 		margin: 0 auto;
-		width: 90vw;
+		width: 80%;
 		text-align: center;
 	}
 	footer #information #social-media{
-		width: 90vw;
 		text-align: center;
 	}
 	footer #information #social-media ul{
@@ -2145,6 +2147,8 @@ footer .footer-list li a:hover {
 	}
 	footer .footer-list{
 		text-align: center;
+		width: 100%;
+		padding-left: 30px;
 	}
 	/*END FOOTER*/
 
@@ -2154,16 +2158,17 @@ footer .footer-list li a:hover {
 	  padding: 10px 0px;
 	}
 	#copyright-wrapper .copyright-text p{
-		font-size: 10px;
-		padding: 0;
+		font-size: 9px;
+		 border: 1px solid red;
 	}
 	#copyright-wrapper #payment{
 		margin-top: 4px;
 		grid-template-columns: repeat(3, 30px);
+		 border: 1px solid red;
 	}
 	#copyright-wrapper .payment-icon{
-		height: 20px;
-		width: 20px;
+		height: 18px;
+		width: 18px;
 	}	
 	/*END COPYRIGHT*/
 }
